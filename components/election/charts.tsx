@@ -81,11 +81,7 @@ export function Distribution({ result }: { result: Simulation }) {
             onMouseEnter={() => setHover(b)}
             onMouseLeave={() => setHover(null)}
           >
-            <title>
-              {b.seat}
-              {b.end > b.seat ? `–${b.end}` : ''} D seats:{' '}
-              {((100 * b.count) / result.iterations).toFixed(2)}% of simulations
-            </title>
+            <title>{`${b.seat}${b.end > b.seat ? `–${b.end}` : ''} D seats: ${((100 * b.count) / result.iterations).toFixed(2)}% of simulations`}</title>
           </rect>
         ))}
         {threshold >= 50 && threshold <= 720 && (
@@ -223,7 +219,7 @@ export function Sensitivity({
               className="svg-hit"
               onClick={() => onChange(v)}
             >
-              <title>Set environment to {marginLabel(v)}</title>
+              <title>{`Set environment to ${marginLabel(v)}`}</title>
             </rect>
           </g>
         ))}

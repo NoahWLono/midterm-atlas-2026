@@ -11,29 +11,68 @@ import {
 } from '@/components/ui/table';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import generic from '@/lib/election/generic-polls.json';
+import { useElectionData } from '@/lib/live/context';
 import context from '@/lib/election/context.json';
-import { POLLS, RACES } from '@/lib/election/data';
+
 import { marginLabel, pollTwoParty } from '@/lib/election/model';
 import { Choice } from './races';
 import { Parameter } from './controls';
 export function PollingLab({ onUseMean }: { onUseMean: (v: number) => void }) {
+  const { bundle, races: RACES } = useElectionData();
+  const generic = {
+    polls: bundle.polls
+      .filter(
+        (p) =>
+          p.chamber === 'generic' &&
+          p.eligible &&
+          p.dem !== null &&
+          p.rep !== null &&
+          (Date.parse(bundle.checkedAt) - Date.parse(p.end)) / 86400000 <= 30,
+      )
+      .map((p) => ({
+        id: p.id,
+        pollster: p.firm,
+        sponsor: p.sponsor,
+        startDate: p.start,
+        endDate: p.end,
+        populationCode: p.population,
+        sampleSize: p.sample,
+        dem: p.dem!,
+        rep: p.rep!,
+        source: p.source,
+      })),
+  };
+  const POLLS = bundle.polls
+    .filter((p) => p.chamber === 'senate' && p.dem !== null && p.rep !== null)
+    .map((p) => ({
+      id: p.id,
+      state: p.state,
+      pollster: p.firm,
+      fieldStart: p.start,
+      fieldEnd: p.end,
+      sampleSize: p.sample,
+      population: p.population,
+      democraticCandidate: p.demName,
+      republicanCandidate: p.repName,
+      democraticPercent: p.dem!,
+      republicanPercent: p.rep!,
+      sourceUrl: p.source,
+      electionType: p.eligible ? 'general' : 'hypothetical-general',
+      reason: p.reason,
+    }));
   const [metric, setMetric] = useState('raw'),
     [selected, setSelected] = useState(
-      generic.polls
-        .filter(
-          (p) =>
-            !generic.polls.some(
-              (x) => x.pollster === p.pollster && x.endDate > p.endDate,
-            ),
-        )
-        .map((p) => p.id),
+      bundle.anchorPollIds.filter((id) =>
+        generic.polls.some((p) => p.id === id),
+      ),
     ),
     [halfLife, setHalfLife] = useState(14);
   const [target, setTarget] = useState('all');
   const incl = generic.polls.filter((p) => selected.includes(p.id));
   const weighted = incl.map((p) => {
-    const age = (Date.parse('2026-09-04') - Date.parse(p.endDate)) / 86400000;
+    const age =
+      (Date.parse(bundle.checkedAt.slice(0, 10)) - Date.parse(p.endDate)) /
+      86400000;
     const firm = incl.filter((x) => x.pollster === p.pollster).length;
     return {
       ...p,
@@ -59,7 +98,7 @@ export function PollingLab({ onUseMean }: { onUseMean: (v: number) => void }) {
         </div>
         <a
           className="outline-button"
-          href="/data/generic-ballot-polls.json"
+          href={`https://raw.githubusercontent.com/NoahWLono/midterm-atlas-2026/main/public/data/editions/${bundle.revision}.json`}
           download
         >
           <Download size={15} />
@@ -67,9 +106,9 @@ export function PollingLab({ onUseMean }: { onUseMean: (v: number) => void }) {
         </a>
       </div>
       <p className="section-dek">
-        A curated snapshot of public surveys, checked against original releases.
-        Coverage is selective. Field dates, target populations, and sample
-        definitions travel with every number.
+        Public surveys refresh from licensed polling feeds. Original research
+        checks remain identified in the full ledger. Coverage is selective;
+        field dates, populations, and source links travel with every number.
       </p>
       <div className="evidence-grid">
         <div className="panel">
@@ -193,8 +232,9 @@ export function PollingLab({ onUseMean }: { onUseMean: (v: number) => void }) {
             <summary>Inspect the weighting rule</summary>
             <p>
               Weight = min(n, 1,500) × 2<sup>−age / half-life</sup> ÷ selected
-              waves from that pollster. Age is measured at September 4, 2026.
-              Margins are D/R normalized before weighting.
+              waves from that pollster. Age is measured at{' '}
+              {bundle.checkedAt.slice(0, 10)}. Margins are D/R normalized before
+              weighting.
             </p>
             <p>
               Effective poll count, (Σw)² / Σw²: <b>{effective.toFixed(2)}</b>.
@@ -211,8 +251,9 @@ export function PollingLab({ onUseMean }: { onUseMean: (v: number) => void }) {
           <div>
             <h3>Senate polling ledger</h3>
             <p className="muted">
-              11 observations across eight states, including two alternative New
-              Hampshire matchups.
+              {POLLS.length} D/R observations across{' '}
+              {new Set(POLLS.map((p) => p.state)).size} states. Alternative
+              matchups and excluded surveys remain visible.
             </p>
           </div>
           <Choice
@@ -274,7 +315,7 @@ export function PollingLab({ onUseMean }: { onUseMean: (v: number) => void }) {
                     {RACES.some((r) => r.pollId === p.id)
                       ? 'Included in mean'
                       : p.electionType === 'hypothetical-general'
-                        ? 'Hypothetical; excluded'
+                        ? p.reason
                         : 'Superseded in sample'}
                   </span>
                 </TableCell>
@@ -294,11 +335,12 @@ export function PollingLab({ onUseMean }: { onUseMean: (v: number) => void }) {
           </TableBody>
         </Table>
         <p className="footnote">
-          Latest eligible survey per state in this collected sample. “Included”
-          applies when the Senate polling toggle is on. RV = registered voters;
-          LV = likely voters. New Hampshire alternatives share respondents and
-          are not independent. Full mode, sponsor, leaner, and uncertainty notes
-          are in the{' '}
+          Latest eligible survey per state in the past 60 days. Candidate pairs
+          must pass independent verification. “Included” applies when the Senate
+          polling toggle is on. RV = registered voters; LV = likely voters. New
+          Hampshire alternatives share respondents and are not independent. The
+          complete live ledger and immutable edition are linked above. Initial
+          research notes are in the{' '}
           <a href="/data/senate-polls.json" download>
             source data
           </a>

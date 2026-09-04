@@ -39,3 +39,7 @@ next-env.d.ts
 
 # compiler cache
 *.tsbuildinfo
+
+# Python interpreter caches
+__pycache__/
+*.pyc

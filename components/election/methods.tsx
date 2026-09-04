@@ -95,7 +95,7 @@ export function Methods({
         </div>
         <span className="version-label">
           <Code2 size={15} />
-          Model v1.0 · fixed snapshot
+          Model v1.1 · versioned polling
         </span>
       </div>
       <div className="methods-layout">
@@ -108,8 +108,8 @@ export function Methods({
           </p>
           <p>
             It has not been trained or evaluated as a production election
-            forecast. No historical calibration, polling-quality grades, or
-            real-time updating is claimed.
+            forecast. Historical calibration and fitted polling-quality grades
+            are not claimed. Polling evidence updates on the published schedule.
           </p>
           <a href="/data/model-manifest.json" download className="source-link">
             Download model manifest <Download size={15} />
@@ -238,13 +238,15 @@ export function Methods({
               </p>
               <p>
                 At the reference environment g₀ ={' '}
-                {REFERENCE_ENVIRONMENT.toFixed(6)}, combine the baseline mean
-                with the selected poll using weight w = 7² / (7² + SE² + 3²).
-                The poll-informed mean is baseline + w × (poll − baseline). The
-                7-point prior scale is analyst-chosen. The predictive error
-                scales remain unchanged; this is a precision-weighted mean
-                adjustment, not a coherent fitted Bayesian posterior predictive
-                distribution.
+                {(
+                  scenario.referenceEnvironment ?? REFERENCE_ENVIRONMENT
+                ).toFixed(6)}
+                , combine the baseline mean with the selected poll using weight
+                w = 7² / (7² + SE² + 3²). The poll-informed mean is baseline + w
+                × (poll − baseline). The 7-point prior scale is analyst-chosen.
+                The predictive error scales remain unchanged; this is a
+                precision-weighted mean adjustment, not a coherent fitted
+                Bayesian posterior predictive distribution.
               </p>
               <p>
                 Your subsequent national slider change is added after that
@@ -447,12 +449,19 @@ export function Methods({
                 attributed to their publisher; they do not enter the simulation.
               </p>
               <p>
-                The site is a fixed research snapshot assembled September 4,
-                2026. Poll fieldwork and rating publication dates remain
-                visible. There is no background data feed. Refreshing the page
-                does not refresh the election evidence. Corrections should be
-                made in the public repository, with source changes and model
-                changes recorded separately.
+                The initial research was assembled September 4, 2026. Polling
+                refreshes every six hours through November 3 using GitHub
+                Actions; open pages check for a new edition every 15 minutes.
+                The national anchor uses the latest eligible wave per firm over
+                30 days, capped sample-size weights and a 14-day half-life.
+                Senate means use the latest eligible verified candidate matchup
+                over 60 days. Partisan/internal and adult-only surveys are
+                excluded by the same rule for both parties. Unknown matchups are
+                held for verification. A source failure retains its last
+                validated records and displays its status. Ratings, maps,
+                candidate eligibility and historical data retain their own
+                research dates. Each changed polling edition is archived; shared
+                scenarios link to that edition.
               </p>
               <p>
                 No account, individual voter profile, or personally targeted

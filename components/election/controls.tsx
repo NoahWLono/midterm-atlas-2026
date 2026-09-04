@@ -2,6 +2,7 @@
 import { Slider } from '@/components/ui/slider';
 import { Switch } from '@/components/ui/switch';
 import { FlaskConical, RotateCcw, ChevronDown, Share2 } from 'lucide-react';
+import { useElectionData } from '@/lib/live/context';
 import { DEFAULTS, marginLabel, type Scenario } from '@/lib/election/model';
 export function Parameter({
   label,
@@ -44,13 +45,16 @@ export function Controls({
   scenario,
   onChange,
   onShare,
+  onAnchor,
   busy,
 }: {
   scenario: Scenario;
   onChange: (s: Scenario) => void;
   onShare: () => void;
+  onAnchor: () => void;
   busy: boolean;
 }) {
+  const { bundle } = useElectionData();
   const patch = (key: keyof Scenario, v: number | boolean) =>
     onChange({ ...scenario, [key]: v });
   return (
@@ -64,7 +68,15 @@ export function Controls({
           className="icon-button"
           title="Restore baseline settings"
           aria-label="Restore baseline settings"
-          onClick={() => onChange({ ...DEFAULTS, overrides: {} })}
+          onClick={() => {
+            onChange({
+              ...DEFAULTS,
+              environment: bundle.referenceEnvironment,
+              referenceEnvironment: bundle.referenceEnvironment,
+              overrides: {},
+            });
+            onAnchor();
+          }}
         >
           <RotateCcw size={16} />
         </button>
@@ -96,13 +108,12 @@ export function Controls({
         <button onClick={() => patch('environment', -5)}>R +5</button>
         <button onClick={() => patch('environment', 0)}>Even</button>
         <button onClick={() => patch('environment', 5)}>D +5</button>
-        <button onClick={() => patch('environment', DEFAULTS.environment)}>
-          Evidence anchor
-        </button>
+        <button onClick={onAnchor}>Evidence anchor</button>
       </div>
       <p className="anchor-note">
-        Anchor: one Economist/YouGov poll, Aug 28–31. D 46%, R 40% becomes D
-        +7.0 among D/R responses. This is not a polling average.
+        Anchor: {bundle.anchorPollIds.length} selected firms over 30 days,
+        latest eligible wave per firm. Sample size capped at 1,500; 14-day
+        recency half-life. D/R normalized; no fitted pollster effects.
       </p>
       <div className="switch-row">
         <div>

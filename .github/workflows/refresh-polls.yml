@@ -1,0 +1,49 @@
+name: Refresh public polling
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 1,7,13,19 * * *'
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: polling-publication
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Verify parser safeguards
+        run: python tests/test_poll_pipeline.py
+      - name: Fetch and validate sources
+        id: update
+        continue-on-error: true
+        run: python scripts/refresh-polls.py
+      - name: Publish validated data and source health
+        run: |
+          git config user.name 'midterm-atlas[bot]'
+          git config user.email 'midterm-atlas[bot]@users.noreply.github.com'
+          git add public/data/live-polls.json public/data/editions/
+          if ! git diff --cached --quiet; then
+            git commit -m 'data: refresh polling evidence and source health'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - name: Report source failures
+        if: steps.update.outcome == 'failure'
+        run: |
+          echo 'One or more polling sources failed. Last validated records and visible health metadata were preserved.'
+          exit 1
+      - name: Retire the schedule after the election window
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [[ "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > "2026-11-04T12:00:00Z" ]]; then
+            gh api --method PUT "repos/$GITHUB_REPOSITORY/actions/workflows/refresh-polls.yml/disable"
+          fi

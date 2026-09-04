@@ -1,6 +1,7 @@
 'use client';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { ThemeToggle } from '@/components/theme/toggle';
+import { useEffect, useRef, useState } from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import {
   ArrowDown,
@@ -10,18 +11,16 @@ import {
   Info,
   GitBranch,
 } from 'lucide-react';
+import { ProbabilityJar } from '@/components/election/probability-jar';
+import { SecretDoor } from '@/components/capitol/secret-door';
 import { Controls } from '@/components/election/controls';
-import {
-  Distribution,
-  ProbabilityDots,
-  Sensitivity,
-} from '@/components/election/charts';
+import { Distribution, Sensitivity } from '@/components/election/charts';
 import { RaceExplorer } from '@/components/election/races';
 import { PollingLab, HistoricalContext } from '@/components/election/evidence';
 import { Methods } from '@/components/election/methods';
 import { Governors } from '@/components/election/governors';
 import { HousePaths } from '@/components/election/house-paths';
-import { CHAMBERS, DATA, RACES } from '@/lib/election/data';
+import { CHAMBERS, DATA } from '@/lib/election/data';
 import {
   DEFAULTS,
   marginLabel,
@@ -31,7 +30,12 @@ import {
   simulate,
   type Scenario,
 } from '@/lib/election/model';
-const senate = RACES.filter((r) => r.chamber === 'senate');
+import {
+  ElectionDataProvider,
+  useElectionData,
+  FALLBACK,
+} from '@/lib/live/context';
+import { LiveStatus, AllPolls } from '@/components/live/status';
 function download(name: string, body: string, type = 'application/json') {
   const url = URL.createObjectURL(new Blob([body], { type }));
   const a = document.createElement('a');
@@ -41,29 +45,68 @@ function download(name: string, body: string, type = 'application/json') {
   setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
 export default function Home() {
+  return (
+    <ElectionDataProvider>
+      <ElectionHome />
+    </ElectionDataProvider>
+  );
+}
+function ElectionHome() {
+  const { bundle, races: RACES, now, editionReady } = useElectionData();
+  const followAnchor = useRef(true);
   const [chamber, setChamber] = useState<'house' | 'senate'>('senate');
   const [scenario, setScenario] = useState<Scenario>({
     ...DEFAULTS,
+    environment: FALLBACK.referenceEnvironment,
+    referenceEnvironment: FALLBACK.referenceEnvironment,
     overrides: {},
   });
   const [calculation, setCalculation] = useState(() => ({
-    result: simulate(senate, DEFAULTS, 34, 100, 51),
-    scenario: { ...DEFAULTS, overrides: {} },
+    result: simulate(
+      RACES.filter((r) => r.chamber === 'senate'),
+      scenario,
+      34,
+      100,
+      51,
+    ),
+    scenario,
     chamber: 'senate' as 'house' | 'senate',
+    revision: bundle.revision,
   }));
   const { result } = calculation;
   const busy =
-    calculation.scenario !== scenario || calculation.chamber !== chamber;
+    calculation.scenario !== scenario ||
+    calculation.chamber !== chamber ||
+    calculation.revision !== bundle.revision ||
+    !editionReady;
   const [message, setMessage] = useState('');
   const [plot, setPlot] = useState('distribution');
   useEffect(() => {
     const timer = setTimeout(() => {
       const q = new URLSearchParams(window.location.search);
-      setScenario(parseScenario(window.location.search));
+      const parsed = parseScenario(window.location.search);
+      followAnchor.current = !q.has('env');
+      if (!q.has('env')) parsed.environment = FALLBACK.referenceEnvironment;
+      parsed.referenceEnvironment = FALLBACK.referenceEnvironment;
+      setScenario(parsed);
       setChamber(q.get('chamber') === 'house' ? 'house' : 'senate');
     }, 0);
     return () => clearTimeout(timer);
   }, []);
+  useEffect(() => {
+    const timer = setTimeout(
+      () =>
+        setScenario((old) => ({
+          ...old,
+          environment: followAnchor.current
+            ? bundle.referenceEnvironment
+            : old.environment,
+          referenceEnvironment: bundle.referenceEnvironment,
+        })),
+      0,
+    );
+    return () => clearTimeout(timer);
+  }, [bundle.referenceEnvironment]);
   useEffect(() => {
     const timer = setTimeout(() => {
       const c = CHAMBERS[chamber];
@@ -77,10 +120,11 @@ export default function Home() {
         ),
         scenario,
         chamber,
+        revision: bundle.revision,
       });
     }, 100);
     return () => clearTimeout(timer);
-  }, [scenario, chamber]);
+  }, [scenario, chamber, RACES, bundle.revision]);
   const c = CHAMBERS[chamber],
     matches = result.total === c.total;
   const d = result.demControl;
@@ -90,18 +134,34 @@ export default function Home() {
     chamber === 'house'
       ? 'Historical-map scenario'
       : 'Experimental Senate projection';
+  const changeScenario = (next: Scenario) => {
+    if (next.environment !== scenario.environment) followAnchor.current = false;
+    setScenario(next);
+  };
+  const followEvidence = () => {
+    followAnchor.current = true;
+    setScenario((old) => ({
+      ...old,
+      environment: bundle.referenceEnvironment,
+      referenceEnvironment: bundle.referenceEnvironment,
+    }));
+  };
   const share = async () => {
-    const url = `${window.location.origin}${window.location.pathname}?${scenarioQuery(scenario, chamber)}`;
-    window.history.replaceState({}, '', url);
+    if (!editionReady) {
+      setMessage(
+        'The requested archived edition is unavailable; sharing and export are paused.',
+      );
+      return;
+    }
+    const url = `${window.location.origin}${window.location.pathname}?${scenarioQuery(scenario, chamber)}&edition=${bundle.revision}`;
+
     try {
       await navigator.clipboard.writeText(url);
       setMessage(
-        'Scenario link copied. It includes your assumptions and local adjustments.',
+        'Scenario link copied. It includes your assumptions, local adjustments, and archived polling edition.',
       );
     } catch {
-      setMessage(
-        'Scenario saved in the address bar. Copy the URL to share these settings.',
-      );
+      setMessage(`Copy this scenario URL: ${url}`);
     }
   };
   const exportRaces = () => {
@@ -130,6 +190,8 @@ export default function Home() {
       'local_sigma',
       'polls_enabled',
       'local_adjustments_json',
+      'reference_environment_pp',
+      'polling_edition_url',
       'model_scope',
     ];
     const rows = result.races.map((r) => {
@@ -145,8 +207,8 @@ export default function Home() {
         r.pollWeight.toFixed(6),
         x.changedMap,
         x.imputed,
-        '2026-09-04',
-        '1.0',
+        bundle.revision,
+        '1.1',
         settings.seed,
         settings.environment,
         settings.nationalSigma,
@@ -154,6 +216,8 @@ export default function Home() {
         settings.localSigma,
         settings.usePolls,
         JSON.stringify(settings.overrides),
+        settings.referenceEnvironment,
+        `https://raw.githubusercontent.com/NoahWLono/midterm-atlas-2026/main/public/data/editions/${bundle.revision}.json`,
         calculation.chamber === 'house'
           ? '2024-map counterfactual'
           : 'experimental Senate projection',
@@ -172,7 +236,8 @@ export default function Home() {
   };
 
   const applyMean = (environment: number) => {
-    setScenario({ ...scenario, environment });
+    followAnchor.current = false;
+    changeScenario({ ...scenario, environment });
     setMessage(
       `National scenario set to ${marginLabel(environment)} using your selected-poll experiment.`,
     );
@@ -267,7 +332,7 @@ export default function Home() {
                       result={result}
                       environment={scenario.environment}
                       onChange={(environment) =>
-                        setScenario({ ...scenario, environment })
+                        changeScenario({ ...scenario, environment })
                       }
                     />
                   </TabsContent>
@@ -280,7 +345,7 @@ export default function Home() {
                   calibrated forecast.{' '}
                   {chamber === 'house'
                     ? 'This simulation retains 2024 district boundaries.'
-                    : 'Polling is included for 7 of 35 races when enabled; the rest rely on state partisanship.'}
+                    : `Polling is included for ${Object.keys(bundle.senatePollIds).length} of 35 races when enabled; the rest rely on state partisanship.`}
                 </span>
               </p>
             </section>
@@ -322,8 +387,9 @@ export default function Home() {
         </div>
         <Controls
           scenario={scenario}
-          onChange={setScenario}
+          onChange={changeScenario}
           onShare={share}
+          onAnchor={followEvidence}
           busy={busy}
         />
       </div>
@@ -332,11 +398,11 @@ export default function Home() {
           <div>
             <h3>Imagine 100 possible elections.</h3>
             <p>
-              Each square represents about 1% of the model’s probability mass. A
+              Each ball represents about 1% of the model’s probability mass. A
               less likely outcome is still an outcome.
             </p>
           </div>
-          <ProbabilityDots p={d} />
+          <ProbabilityJar p={d} />
           <div>
             <strong>{probabilityLabel(d)}</strong>
             <p>
@@ -383,10 +449,11 @@ export default function Home() {
           <span />
           Independent & open source <ArrowUpRight size={13} />
         </a>
+        <ThemeToggle />
       </header>
       <div className="edition-bar">
         <span>United States · 2026 midterm elections</span>
-        <span>Research snapshot: September 4, 2026</span>
+        <span>Polling edition: {bundle.changedAt.slice(0, 10)}</span>
       </div>
       <main>
         <div className="page-heading">
@@ -404,10 +471,17 @@ export default function Home() {
           </div>
           <div className="date-stamp">
             <span className="countdown">
-              60<span>days</span>
+              {Math.max(
+                0,
+                Math.ceil(
+                  (Date.parse('2026-11-03T00:00:00-05:00') - Date.parse(now)) /
+                    86400000,
+                ),
+              )}
+              <span>days</span>
             </span>
             <strong>Until November 3</strong>
-            <span>At this research snapshot</span>
+            <span>Election day · 2026</span>
             <a href="#history">
               Put this cycle in context <ArrowDown size={12} />
             </a>
@@ -419,12 +493,14 @@ export default function Home() {
             <strong>A public election research lab.</strong> Original,
             nonpartisan analysis with dated evidence and reproducible
             simulations. Experimental probabilities; no claim of historical
-            calibration or live updates.
+            calibration. Polling updates automatically, with source checks every
+            six hours. Map and rating inputs retain their own dates.
           </p>
           <a href="#data">
             Inspect the sources <ArrowUpRight size={14} />
           </a>
         </div>
+        <LiveStatus />
         <div id="forecast" className="anchor-target">
           <Tabs
             value={chamber}
@@ -478,11 +554,12 @@ export default function Home() {
             result={result}
             chamber={chamber}
             scenario={scenario}
-            onChange={setScenario}
+            onChange={changeScenario}
             onExport={exportRaces}
           />
         )}
-        <PollingLab onUseMean={applyMean} />
+        <PollingLab key={bundle.revision} onUseMean={applyMean} />
+        <AllPolls />
         <section className="analysis-notes section-block" id="analysis">
           <div>
             <p className="eyebrow">Reading the landscape</p>
@@ -491,12 +568,12 @@ export default function Home() {
           <article>
             <h3>Can a national advantage translate into seats?</h3>
             <p>
-              The national surveys in this snapshot all report Democratic
-              generic-ballot leads. Their target populations and undecided
-              shares differ. A lead in that question does not determine which
-              districts change hands: the location of marginal voters, baseline
-              partisanship, turnout, and candidate differences govern the
-              translation.
+              The national surveys measure party preference under different
+              questions and sampling designs. Their target populations and
+              undecided shares differ. A lead in that question does not
+              determine which districts change hands: the location of marginal
+              voters, baseline partisanship, turnout, and candidate differences
+              govern the translation.
             </p>
             <p>
               The House ratings exercise fixes non-tossups to show the
@@ -565,8 +642,9 @@ export default function Home() {
             <strong>Built for scrutiny</strong>
             <p>
               Input files, transformation code, tests, and a model manifest are
-              public. Evidence is a dated snapshot. Contributions should include
-              an original source and a clear account of any changed assumption.
+              public. Polling editions are archived as evidence changes.
+              Contributions should include an original source and a clear
+              account of any changed assumption.
             </p>
           </div>
         </section>
@@ -578,6 +656,7 @@ export default function Home() {
             Midterm <b>Atlas</b>
           </span>
         </Link>
+        <SecretDoor scenario={scenario} />
         <p>
           Independent. Nonpartisan. Reproducible.
           <br />

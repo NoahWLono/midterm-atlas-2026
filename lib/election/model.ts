@@ -1,6 +1,7 @@
 /** All margins and uncertainty scales are D-minus-R two-party percentage points. */
 export type Scenario = {
   environment: number;
+  referenceEnvironment?: number;
   nationalSigma: number;
   regionalSigma: number;
   localSigma: number;
@@ -99,7 +100,8 @@ export function posterior(
   };
 }
 export function raceParameters(r: ModelRace, p: Scenario) {
-  let mean = r.baseline + REFERENCE_ENVIRONMENT,
+  const reference = p.referenceEnvironment ?? REFERENCE_ENVIRONMENT;
+  let mean = r.baseline + reference,
     weight = 0;
   if (p.usePolls && r.poll) {
     const post = posterior(
@@ -111,7 +113,7 @@ export function raceParameters(r: ModelRace, p: Scenario) {
     mean = post.mean;
     weight = post.weight;
   }
-  mean += p.environment - REFERENCE_ENVIRONMENT + (p.overrides[r.id] || 0);
+  mean += p.environment - reference + (p.overrides[r.id] || 0);
   const local = Math.sqrt(p.localSigma ** 2 + r.extraSigma ** 2);
   const sd = Math.sqrt(
     p.nationalSigma ** 2 + p.regionalSigma ** 2 + local ** 2,

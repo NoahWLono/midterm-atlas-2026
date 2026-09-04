@@ -35,7 +35,8 @@ import {
   SlidersHorizontal,
   Download,
 } from 'lucide-react';
-import { RACES, POLLS, type Race, raceStatus } from '@/lib/election/data';
+import { type Race, raceStatus } from '@/lib/election/data';
+import { useElectionData } from '@/lib/live/context';
 import ratings from '@/lib/election/senate-ratings.json';
 import {
   marginLabel,
@@ -88,6 +89,7 @@ export function RaceExplorer({
   onChange: (p: Scenario) => void;
   onExport: () => void;
 }) {
+  const { races: RACES } = useElectionData();
   const [search, setSearch] = useState(''),
     [state, setState] = useState('all'),
     [filter, setFilter] = useState('all'),
@@ -97,7 +99,7 @@ export function RaceExplorer({
   const records = useMemo(
     () =>
       result.races.map((r) => ({ ...RACES.find((a) => a.id === r.id)!, ...r })),
-    [result],
+    [result, RACES],
   );
   const filtered = useMemo(
     () =>
@@ -466,8 +468,24 @@ function RaceDetails({
   scenario: Scenario;
   onChange: (p: Scenario) => void;
 }) {
-  const poll = POLLS.find((p) => p.id === r.pollId);
-  const base = r.baseline + REFERENCE_ENVIRONMENT;
+  const { bundle } = useElectionData();
+  const livePoll = bundle.polls.find((p) => p.id === r.pollId);
+  const poll = livePoll
+    ? {
+        pollster: livePoll.firm,
+        democraticCandidate: livePoll.demName,
+        republicanCandidate: livePoll.repName,
+        democraticPercent: livePoll.dem,
+        republicanPercent: livePoll.rep,
+        fieldStart: livePoll.start,
+        fieldEnd: livePoll.end,
+        sampleSize: livePoll.sample,
+        population: livePoll.population,
+        sourceUrl: livePoll.source,
+      }
+    : undefined;
+  const reference = scenario.referenceEnvironment ?? REFERENCE_ENVIRONMENT;
+  const base = r.baseline + reference;
   const pollAdj =
     r.mean -
     (r.baseline + scenario.environment + (scenario.overrides[r.id] || 0));
@@ -536,7 +554,7 @@ function RaceDetails({
       <h3>How this mean is constructed</h3>
       <div className="equation small-equation">
         {base.toFixed(2)} + {pollAdj.toFixed(2)} +{' '}
-        {(scenario.environment - REFERENCE_ENVIRONMENT).toFixed(2)} +{' '}
+        {(scenario.environment - reference).toFixed(2)} +{' '}
         {(scenario.overrides[r.id] || 0).toFixed(2)} = {r.mean.toFixed(2)}
       </div>
       <p className="footnote">

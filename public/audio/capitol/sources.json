@@ -1,0 +1,158 @@
+[
+  {
+    "file": "piccolo-g5-staccato.wav",
+    "source": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Woodwinds/Piccolo/Stac/piccolo_G5_staccato1.wav",
+    "repository": "sgossner/VSCO-2-CE",
+    "commit": "440300901dfe9275fd84e0b7763af1f8443ae62e",
+    "sha256": "25da0dacfa9cf968e73ad05cb9068f2c3fde8932103aafa8c397c9272d0354b1",
+    "status": 200,
+    "license": "CC0-1.0",
+    "audio": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "pcm_s24le",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ],
+      "format": {
+        "duration": "0.453401"
+      }
+    },
+    "changes": "Converted to 22.05 kHz mono 16-bit PCM; playback uses pitch shifting and envelopes.",
+    "originalBytes": 120014,
+    "bytes": 20074
+  },
+  {
+    "file": "piccolo-c5-sustain.wav",
+    "source": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Woodwinds/Piccolo/Sus/piccolo_C5_sustain1.wav",
+    "repository": "sgossner/VSCO-2-CE",
+    "commit": "440300901dfe9275fd84e0b7763af1f8443ae62e",
+    "sha256": "d3069f1cf627d1cf9715ea5564e26e0988d321a6e7c5d4ffe8ff5345ff78c09f",
+    "status": 200,
+    "license": "CC0-1.0",
+    "audio": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "pcm_s24le",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ],
+      "format": {
+        "duration": "8.388685"
+      }
+    },
+    "changes": "Converted to 22.05 kHz mono 16-bit PCM; playback uses pitch shifting and envelopes.",
+    "originalBytes": 2219690,
+    "bytes": 370020
+  },
+  {
+    "file": "flute-a4-staccato.wav",
+    "source": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Woodwinds/Flute/stac/LDFlute_stac_A4_v3_rr1.wav",
+    "repository": "sgossner/VSCO-2-CE",
+    "commit": "440300901dfe9275fd84e0b7763af1f8443ae62e",
+    "sha256": "10eab910f293c0e478d26cbb67e3b9307d56a40602508d94ab82f647f04d37c3",
+    "status": 200,
+    "license": "CC0-1.0",
+    "audio": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "pcm_s24le",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ],
+      "format": {
+        "duration": "0.743401"
+      }
+    },
+    "changes": "Converted to 22.05 kHz mono 16-bit PCM; playback uses pitch shifting and envelopes.",
+    "originalBytes": 197358,
+    "bytes": 32980
+  },
+  {
+    "file": "snare-f1.wav",
+    "source": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Membranophones/Struck%20Membranophones/Legacy%20Snares/OldSnare/snare_f1.wav",
+    "repository": "sgossner/VCSL",
+    "commit": "c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e",
+    "sha256": "c332f9548c64202a6740d6ee327b17f87e1fd13fee034a9ad58fc8b4c07a80f2",
+    "status": 200,
+    "license": "CC0-1.0",
+    "audio": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "pcm_s16le",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ],
+      "format": {
+        "duration": "0.329297"
+      }
+    },
+    "changes": "Converted to 22.05 kHz mono 16-bit PCM; playback uses pitch shifting and envelopes.",
+    "originalBytes": 58134,
+    "bytes": 14600
+  },
+  {
+    "file": "bass-drum.wav",
+    "source": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Membranophones/Struck%20Membranophones/Bass%20Drum%201/BDrumNew_hit_v2_rr1_Sum.wav",
+    "repository": "sgossner/VCSL",
+    "commit": "c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e",
+    "sha256": "56827fe9b55f282a0db851e242bc24660d339a0e358b182966aea047240c1136",
+    "status": 200,
+    "license": "CC0-1.0",
+    "audio": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "pcm_s16le",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ],
+      "format": {
+        "duration": "1.596213"
+      }
+    },
+    "changes": "Converted to 22.05 kHz mono 16-bit PCM; playback uses pitch shifting and envelopes.",
+    "originalBytes": 281616,
+    "bytes": 70472
+  },
+  {
+    "file": "harpsichord-c4.wav",
+    "source": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Harpsichord%2C%20English/Sustains/Normal/ZuckermannKitHarpsi_Normal_Sus_C4_rr1.wav",
+    "repository": "sgossner/VCSL",
+    "commit": "c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e",
+    "sha256": "e6d49fcd8e2efe5a49839d241caf2f244e8921e8cdecb869c4549835b38b6f8d",
+    "status": 200,
+    "license": "CC0-1.0",
+    "audio": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "pcm_s24le",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ],
+      "format": {
+        "duration": "6.458866"
+      }
+    },
+    "changes": "Converted to 22.05 kHz mono 16-bit PCM; playback uses pitch shifting and envelopes.",
+    "originalBytes": 1709120,
+    "bytes": 284914
+  }
+]

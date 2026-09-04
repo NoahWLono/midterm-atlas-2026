@@ -385,11 +385,14 @@ export function StateGrid({
               gridColumn: col + 1,
               gridRow: row + 1,
               background: !v
-                ? '#eef1f7'
+                ? 'var(--muted)'
                 : v.p > 0.5
                   ? `rgba(34,97,189,${0.18 + 0.8 * (v.p - 0.5) * 2})`
                   : `rgba(195,64,81,${0.18 + 0.8 * (0.5 - v.p) * 2})`,
-              color: v && Math.abs(v.p - 0.5) > 0.28 ? 'white' : '#25314b',
+              color:
+                v && Math.abs(v.p - 0.5) > 0.28
+                  ? 'white'
+                  : 'var(--map-label, #25314b)',
             }}
             className={selected === s ? 'selected' : ''}
             onClick={() => onSelect(selected === s ? 'all' : s)}

@@ -1,0 +1,506 @@
+{
+  "asOf": "2026-09-04",
+  "scope": "Dated candidate identity registry; exact full names and documented aliases, never surname-only matching. A verified identity is necessary but not sufficient for polling eligibility.",
+  "pairs": [
+    {
+      "state": "KS",
+      "democratic": "Adam Hamilton",
+      "republican": "Roger Marshall",
+      "eligible": true,
+      "aliases": {
+        "democratic": [
+          "Adam Hamilton"
+        ],
+        "republican": [
+          "Roger Marshall"
+        ]
+      },
+      "sources": [
+        {
+          "url": "https://sos.ks.gov/elections/26elec/2026-Primary-Election-Official-Vote-Totals.pdf",
+          "publisher": "Kansas Secretary of State",
+          "source_date": "2026-08-04",
+          "supports": "Official primary results, page 1: Hamilton has the most Democratic votes; Marshall has the most Republican votes.",
+          "kind": "official"
+        },
+        {
+          "url": "https://sos.ks.gov/elections/election-results.html",
+          "publisher": "Kansas Secretary of State",
+          "source_date": null,
+          "supports": "Official results index links the 2026 official primary PDF.",
+          "kind": "official"
+        },
+        {
+          "url": "https://sos.ks.gov/elections/candidates.html",
+          "publisher": "Kansas Secretary of State",
+          "source_date": null,
+          "supports": "Democratic and Republican candidates are nominated by primary election.",
+          "kind": "official"
+        }
+      ],
+      "notes": [
+        "Nomination is verified from the official primary result, not from a poll matchup.",
+        "The filing portal still carried an August 4 Primary Election heading, so it was not treated as a separately verified certified general ballot."
+      ]
+    },
+    {
+      "state": "MN",
+      "democratic": "Peggy Flanagan",
+      "republican": "Michele Tafoya",
+      "eligible": true,
+      "aliases": {
+        "democratic": [
+          "Peggy Flanagan"
+        ],
+        "republican": [
+          "Michele Tafoya"
+        ]
+      },
+      "sources": [
+        {
+          "url": "https://electionresults.sos.mn.gov/Results/Index?ErsElectionId=200&electionDate=08%2F11%2F2026+00%3A00%3A00&officeInElectionIdList=-1&officeInElectionIdList=38485&scenario=USSenate",
+          "publisher": "Minnesota Secretary of State",
+          "source_date": "2026-08-19",
+          "supports": "US Senate primary results: all 87 counties and 4,105 precincts complete; Flanagan and Tafoya each win their primary. Last updated 8:47 PM.",
+          "kind": "official"
+        },
+        {
+          "url": "https://electionresults.sos.mn.gov/20260811",
+          "publisher": "Minnesota Secretary of State",
+          "source_date": "2026-08-11",
+          "supports": "Official primary results index and canvassing notice.",
+          "kind": "official"
+        },
+        {
+          "url": "https://www.axios.com/local/twin-cities/2026/08/13/minnesota-primary-results-maps-us-senate-governor",
+          "publisher": "Axios",
+          "source_date": "2026-08-13",
+          "supports": "Post-primary reporting identifies the two general-election nominees.",
+          "kind": "secondary"
+        }
+      ],
+      "notes": [
+        "Use D as the national grouping and Democratic-Farmer-Labor (DFL) as the source party label.",
+        "The official website still labeled these returns unofficial despite a complete count and an August 19 update. The candidate nomination is corroborated, but a separate certification document was not inspected.",
+        "Correct spelling is Michele Tafoya."
+      ]
+    },
+    {
+      "state": "NM",
+      "democratic": "Ben Ray Luján",
+      "republican": "Larry Marker",
+      "eligible": true,
+      "aliases": {
+        "democratic": [
+          "Ben Ray Luján",
+          "Ben Ray Lujan",
+          "Ben R Lujan",
+          "Ben R. Luján"
+        ],
+        "republican": [
+          "Larry Marker",
+          "Larry E Marker",
+          "Larry E. Marker"
+        ]
+      },
+      "sources": [
+        {
+          "url": "https://electionresults.sos.nm.gov/resultsSW.aspx?map=CTY&type=FED",
+          "publisher": "New Mexico Secretary of State",
+          "source_date": "2026-06-23",
+          "supports": "Official statewide primary results: 2,204 precincts complete; Lujan 182,360 votes versus Dodson 34,289; sole Republican Marker 31,220 write-in votes. Last updated 2:26 PM MT. Read through indexed official page; later direct open returned 403.",
+          "kind": "official"
+        },
+        {
+          "url": "https://candidateportal.servis.sos.state.nm.us/CandidateList.aspx?cty=99&eid=2911",
+          "publisher": "New Mexico Secretary of State",
+          "source_date": null,
+          "supports": "Qualified primary candidate records identify BEN R LUJAN as DEM and LARRY E MARKER (write-in) as REP.",
+          "kind": "official"
+        },
+        {
+          "url": "https://newmexico.gop/2026/07/18/marker-and-zamora-lujan-and-leger-fernandez-got-the-photo-op-8000-victims-are-still-waiting-for-the-check/",
+          "publisher": "Republican Party of New Mexico",
+          "source_date": "2026-07-18",
+          "supports": "Direct party release explicitly identifies Larry Marker as its US Senate nominee. Used only for identity and nomination.",
+          "kind": "party_primary_source"
+        },
+        {
+          "url": "https://www.sos.nm.gov/wp-content/uploads/2026/02/IT-0106-19C7D5376E7-0C313E22A39F07A1B0-2026-Primary-Candidate-Guide_Final-.pdf",
+          "publisher": "New Mexico Secretary of State",
+          "source_date": "2026-02-18",
+          "supports": "Candidate guide: Republican US Senate petition minimum is 2,351; primary write-in and general write-in categories are distinct.",
+          "kind": "official"
+        },
+        {
+          "url": "https://apnews.com/article/88f0755a456c2e40cb6cc2b2da2d56c5",
+          "publisher": "Associated Press",
+          "source_date": "2026-06-01",
+          "supports": "Decision notes state Marker needed 2,351 write-in primary votes to gain the nomination. Official 31,220 total exceeds it.",
+          "kind": "secondary"
+        }
+      ],
+      "notes": [
+        "A primary write-in filing alone would not establish nomination. Here the official vote total and a subsequent direct party nominee statement corroborate it.",
+        "Do not label Marker as a general-election write-in based on the primary notation. Preserve accent-insensitive matching for Luján."
+      ]
+    },
+    {
+      "state": "SC",
+      "democratic": "Annie Andrews",
+      "republican": "Darline Graham",
+      "eligible": true,
+      "aliases": {
+        "democratic": [
+          "Annie Andrews",
+          "Dr. Annie Andrews"
+        ],
+        "republican": [
+          "Darline Graham",
+          "Darline Graham Nordone"
+        ]
+      },
+      "sources": [
+        {
+          "url": "https://scvotes.gov/elections-statistics/election-results/",
+          "publisher": "South Carolina Election Commission",
+          "source_date": "2026-09-01",
+          "supports": "Official index links June 9 statewide primaries and August 25 US Senate Special Republican Runoff.",
+          "kind": "official"
+        },
+        {
+          "url": "https://www.enr-scvotes.org/SC/127179/",
+          "publisher": "South Carolina Election Commission",
+          "source_date": "2026-08-25",
+          "supports": "Official August 25 runoff URL; result content could not be read because of the JavaScript/anti-bot gate.",
+          "kind": "official"
+        },
+        {
+          "url": "https://www.enr-scvotes.org/SC/126294/",
+          "publisher": "South Carolina Election Commission",
+          "source_date": "2026-06-09",
+          "supports": "Official June 9 primary URL; result content was not readable.",
+          "kind": "official"
+        },
+        {
+          "url": "https://governor.sc.gov/news/2026-07/gov-mcmaster-appoints-darline-graham-us-senate",
+          "publisher": "Governor of South Carolina",
+          "source_date": "2026-07-13",
+          "supports": "Darline Graham appointed to the current Senate term; replacement primary/runoff calendar. Appointment does not itself establish general nomination.",
+          "kind": "official"
+        },
+        {
+          "url": "https://drannieandrews.com/wp-content/uploads/2026/08/IMPACT-SC-SEN-POLL-MEMO-AUG-2026.pdf",
+          "publisher": "Impact Research, hosted by Annie Andrews campaign",
+          "source_date": "2026-08-26",
+          "supports": "Original poll memo explicitly labels Annie Andrews a Democrat and Darline Graham a Republican; refers to Andrews primary victory. Fieldwork August 18-24 preceded the Republican runoff.",
+          "kind": "pollster_original"
+        },
+        {
+          "url": "https://apnews.com/article/03899983c3702842039e99d62e16ddad",
+          "publisher": "Associated Press",
+          "source_date": "2026-08-25",
+          "supports": "Reports Darline Graham winning the Republican nomination and facing Democratic nominee Annie Andrews.",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://scdailygazette.com/2026/08/25/darline-graham-wins-gop-nomination-for-next-us-senate-term-following-her-brothers-death/",
+          "publisher": "SC Daily Gazette",
+          "source_date": "2026-08-25",
+          "supports": "Reports runoff win with 52.5% after all votes counted, according to unofficial returns.",
+          "kind": "secondary"
+        }
+      ],
+      "notes": [
+        "Nomination established from original AP and SC Daily Gazette election reporting; official runoff details could not be retrieved. Darline Graham is distinct from Lindsey Graham."
+      ]
+    },
+    {
+      "state": "TN",
+      "democratic": "Marquita Bradshaw",
+      "republican": "Bill Hagerty",
+      "nominationDate": "2026-08-06",
+      "eligible": true,
+      "status": "Both nominees confirmed by original Associated Press election reporting. Statewide certification document was not retrieved.",
+      "sources": [
+        {
+          "url": "https://apnews.com/article/tennessee-primary-election-congress-redistricting-memphis-ad0c23a4d0d5f7464ff2bdbb892b0a3f",
+          "publisher": "Associated Press",
+          "type": "original election reporting",
+          "evidenceDate": "2026-08-06",
+          "note": "AP reports Hagerty won the Republican primary unopposed and Bradshaw won the Democratic nomination for November."
+        },
+        {
+          "url": "https://votechestercountytn.gov/results/",
+          "publisher": "Chester County Election Commission",
+          "type": "official county primary results",
+          "evidenceDate": "2026-08-06",
+          "note": "Official party-specific local ballot/results confirm the names and party affiliations; county vote totals alone do not establish statewide victory."
+        }
+      ]
+    },
+    {
+      "state": "MS",
+      "democratic": "Scott Colom",
+      "republican": "Cindy Hyde-Smith",
+      "nominationDate": "2026-03-10",
+      "eligible": true,
+      "status": "Current official SOS Senate candidate list shows one Democrat, one Republican and independent Ty Pinkins for the November 3 general election.",
+      "sources": [
+        {
+          "url": "https://sos.ms.gov/content/CandidateQualifying/default.aspx",
+          "publisher": "Mississippi Secretary of State",
+          "type": "official current candidate list",
+          "accessed": "2026-09-04",
+          "note": "Senate list identifies Scott Colom as Democratic, Cindy Hyde-Smith as Republican and Ty Pinkins as Independent; primary March 10, general November 3."
+        }
+      ]
+    },
+    {
+      "state": "AR",
+      "democratic": "Hallie Shoffner",
+      "republican": "Tom Cotton",
+      "nominationDate": "2026-03-03",
+      "eligible": true,
+      "status": "Both nominees confirmed by original Arkansas Advocate election reporting; statewide certification document was not retrieved.",
+      "sources": [
+        {
+          "url": "https://arkansasadvocate.com/2026/03/03/shoffner-cotton-win-primaries-for-u-s-senate-seat-in-arkansas/",
+          "publisher": "Arkansas Advocate",
+          "type": "original election reporting including firsthand winner interviews",
+          "published": "2026-03-03",
+          "updated": "2026-03-04",
+          "note": "Cotton won the Republican primary and Shoffner defeated Ethan Dunbar for the Democratic nomination. Article explicitly identifies their November general-election matchup. Early partial vote percentages are not treated as certified final totals."
+        }
+      ]
+    },
+    {
+      "state": "OK",
+      "democratic": "N'Kiyla Jasmine Thomas",
+      "republican": "Kevin Hern",
+      "nominationDates": {
+        "democratic": "2026-08-25",
+        "republican": "2026-06-16"
+      },
+      "eligible": true,
+      "status": "Thomas won the Democratic runoff, replacing the requested but defeated Jim Priest in the eligible pair. Hern won the Republican primary in June.",
+      "aliases": {
+        "democratic": [
+          "N'Kiyla Jasmine Thomas",
+          "N'Kiyla Thomas",
+          "Jasmine Thomas",
+          "N'Kiyla \"Jasmine\" Thomas"
+        ]
+      },
+      "sources": [
+        {
+          "url": "https://www.kosu.org/oklahoma-election-results-august-2026",
+          "publisher": "KOSU / Oklahoma Public Media Exchange",
+          "type": "original election reporting",
+          "evidenceDate": "2026-08-25",
+          "note": "Reports Thomas defeated Priest and will face Republican Kevin Hern, who won in June; also names independent and Libertarian general-election candidates."
+        },
+        {
+          "url": "https://www.kxii.com/2026/08/26/ardmore-native-nkiyla-jasmine-thomas-wins-democratic-nomination-us-senate-oklahoma/",
+          "publisher": "KXII",
+          "type": "original local election reporting",
+          "published": "2026-08-25",
+          "note": "Confirms full candidate spelling N’Kiyla Jasmine Thomas and Democratic runoff victory."
+        },
+        {
+          "url": "https://oklahoma.gov/elections/elections-results/election-results/2026-election-results/august-runoff-primary-election.html",
+          "publisher": "Oklahoma State Election Board",
+          "type": "official results index",
+          "evidenceDate": "2026-08-25",
+          "updated": "2026-09-01",
+          "note": "Page labels the August 25 results official and links to https://results.okelections.us/OKER/?elecDate=20260825 ; detailed app returned HTTP 403, so no certified vote totals asserted."
+        }
+      ]
+    },
+    {
+      "state": "IA",
+      "democratic": "Josh Turek",
+      "republican": "Ashley Hinson",
+      "eligible": true,
+      "sources": [
+        {
+          "url": "https://emersoncollegepolling.com/iowa-2026-poll-hinson-leads-turek/",
+          "type": "original poll release verifying the matchup"
+        },
+        {
+          "url": "https://emersoncollegepolling.com/iowa-2026-poll/",
+          "type": "original poll release verifying the matchup"
+        }
+      ],
+      "notes": [
+        "Initial September 4 independently checked matchup."
+      ]
+    },
+    {
+      "state": "TX",
+      "democratic": "James Talarico",
+      "republican": "Ken Paxton",
+      "eligible": true,
+      "sources": [
+        {
+          "url": "https://emersoncollegepolling.com/texas-2026-poll-paxton-and-talarico/",
+          "type": "original poll release verifying the matchup"
+        },
+        {
+          "url": "https://texaspolitics.utexas.edu/files/202608_POLL_TOPLINE-c5d4ba53.pdf",
+          "type": "original poll release verifying the matchup"
+        }
+      ],
+      "notes": [
+        "Initial September 4 independently checked matchup."
+      ]
+    },
+    {
+      "state": "GA",
+      "democratic": "Jon Ossoff",
+      "republican": "Mike Collins",
+      "eligible": true,
+      "sources": [
+        {
+          "url": "https://jamesmagazinega.com/2026/08/18/exclusive-jmo-insideradvantage-georgia-survey-ossoff-leads-jackson-lance-bottoms-tied/",
+          "type": "original poll release verifying the matchup"
+        }
+      ],
+      "notes": [
+        "Initial September 4 independently checked matchup."
+      ]
+    },
+    {
+      "state": "NC",
+      "democratic": "Roy Cooper",
+      "republican": "Michael Whatley",
+      "eligible": true,
+      "sources": [
+        {
+          "url": "https://www.highpoint.edu/blog/2026/08/hpu-poll-126-majority-of-north-carolina-voters-say-country-headed-in-wrong-direction/",
+          "type": "original poll release verifying the matchup"
+        }
+      ],
+      "notes": [
+        "Initial September 4 independently checked matchup."
+      ]
+    },
+    {
+      "state": "OH",
+      "democratic": "Sherrod Brown",
+      "republican": "Jon Husted",
+      "eligible": true,
+      "sources": [
+        {
+          "url": "https://static.foxnews.com/foxnews.com/content/uploads/2026/08/fox_august-6-10-2026_ohio_topline_august-13-release.pdf",
+          "type": "original poll release verifying the matchup"
+        }
+      ],
+      "notes": [
+        "Initial September 4 independently checked matchup."
+      ]
+    },
+    {
+      "state": "ME",
+      "democratic": "Troy Jackson",
+      "republican": "Susan Collins",
+      "eligible": true,
+      "sources": [
+        {
+          "url": "https://static.foxnews.com/foxnews.com/content/uploads/2026/08/fox_august-6-10-2026_maine_topline_august-12-release-1.pdf",
+          "type": "original poll release verifying the matchup"
+        }
+      ],
+      "notes": [
+        "Initial September 4 independently checked matchup."
+      ]
+    },
+    {
+      "state": "MI",
+      "democratic": "Abdul El-Sayed",
+      "republican": "Mike Rogers",
+      "eligible": true,
+      "sources": [
+        {
+          "url": "https://www.aarp.org/press/releases/2026-08-20-New-AARP-Michigan-Poll-Older-Voters-Critical-Demographic-in-Narrow-Senate-Governor-Races.html",
+          "type": "original poll release verifying the matchup"
+        }
+      ],
+      "notes": [
+        "Initial September 4 independently checked matchup."
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "state": "AK",
+      "reason": "Ranked-choice field with multiple Republicans; first preferences cannot enter this two-bloc winner model.",
+      "sources": [
+        {
+          "url": "https://www.elections.alaska.gov/candidates/?election=26genr",
+          "publisher": "Alaska Division of Elections",
+          "source_date": "2026-09-02",
+          "supports": "2026 General Election roster marks all four listed Senate candidates Certified; incumbent Dan S. Sullivan is distinct from Daniel J. Sullivan Jr.",
+          "kind": "official"
+        },
+        {
+          "url": "https://www.elections.alaska.gov/election-information/",
+          "publisher": "Alaska Division of Elections",
+          "source_date": null,
+          "supports": "Nonpartisan top-four primary advances candidates regardless of affiliation; general elections use ranked choice voting. Affiliation does not establish party nomination.",
+          "kind": "official"
+        }
+      ]
+    },
+    {
+      "state": "MT",
+      "reason": "Major independent candidacy; D/R normalization would omit Seth Bodnar.",
+      "sources": [
+        {
+          "url": "https://electionresults.mt.gov/resultsSW.aspx?map=CTY&type=FED",
+          "publisher": "Montana Secretary of State",
+          "type": "official complete primary results",
+          "updated": "2026-06-29T13:50:32-06:00",
+          "note": "All 728 precincts fully reported. Kurt Alme Republican 128716 votes, above both opponents; Alani Bankhead Democrat 48772 votes, above all four opponents. Libertarian winner Kyle Austin 1819 votes."
+        },
+        {
+          "url": "https://ehmonitor.com/bankhead-refuses-to-bow-setting-up-three-headed-senate-race/",
+          "publisher": "The Monitor - East Helena",
+          "type": "original firsthand reporting from candidate press conference",
+          "published": "2026-08-11",
+          "note": "Reports Bankhead said at her August 10 press conference she would remain through November 3; reports a four-way Senate race."
+        }
+      ]
+    },
+    {
+      "state": "OK",
+      "candidate": "Jim Priest",
+      "party": "D",
+      "reason": "Defeated by Thomas in the August 25 Democratic primary runoff; historical or hypothetical Priest/Hern polling must not be eligible for the current nominated-candidate general-election average.",
+      "source": "https://www.kosu.org/oklahoma-election-results-august-2026"
+    },
+    {
+      "state": "RI",
+      "requestedDemocratic": "Jack Reed",
+      "officialDemocraticBallotName": "John Francis Reed",
+      "requestedRepublican": "Raymond McKay",
+      "officialRepublicanBallotName": "Raymond T McKay",
+      "eligible": false,
+      "reason": "September 8 primary has not occurred as of September 4. Official candidate search lists Reed plus Connor Francis Burbridge and Luis Daniel Munoz on the Democratic primary ballot; McKay on the Republican primary ballot. Primary-win fields are blank and general-election-ballot fields are N. Do not promote primary candidates to completed nominees.",
+      "primaryDate": "2026-09-08",
+      "sources": [
+        {
+          "url": "https://vote.sos.ri.gov/Candidates/CandidateSearchSummary?Election=18239&OfficeType=620",
+          "publisher": "Rhode Island Secretary of State",
+          "type": "official candidate qualification table",
+          "updated": "2026-09-01T22:54:00-04:00"
+        },
+        {
+          "url": "https://vote.sos.ri.gov/Forms/Elections/Guides/2026_ElecCal.pdf",
+          "publisher": "Rhode Island Secretary of State",
+          "type": "official 2026 election calendar"
+        }
+      ]
+    }
+  ]
+}

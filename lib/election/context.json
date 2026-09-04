@@ -1,0 +1,216 @@
+{
+  "asOf": "2026-09-04",
+  "election": {
+    "nationalDate": "2026-11-03",
+    "houseSeats": 435,
+    "houseMajorityThreshold": 218,
+    "baseline2024Result": {
+      "R": 220,
+      "D": 215
+    },
+    "currentOfficeholderTally": null,
+    "dateSource": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+    "seatsSource": "https://www.house.gov/representatives",
+    "baselineSource": "https://history.house.gov/Institution/Party-Divisions/Party-Divisions/",
+    "note": "218 is a majority of a full 435-seat House; this is the election-control threshold. Actual chamber membership changes with vacancies and special elections."
+  },
+  "louisiana": {
+    "housePrimaryDate": "2026-11-03",
+    "houseRunoffIfNeeded": "2026-12-12",
+    "summary": "In 2026 Louisiana U.S. House races use an all-candidate open primary on Nov. 3. A candidate can win outright with a majority; otherwise the top two advance to a Dec. 12 open general election.",
+    "note": "The spring closed-party primary system remains relevant to U.S. Senate and specified state offices. House procedure changed under Act 7 of the 2026 Regular Session.",
+    "sources": [
+      "https://www.sos.la.gov/elections-voting/types-of-elections",
+      "https://www.sos.la.gov/elections-voting/election-dates"
+    ]
+  },
+  "redistricting": {
+    "sourceUpdated": "2026-09-01",
+    "source": "https://www.ncsl.org/redistricting-and-census/changing-the-maps-tracking-mid-decade-redistricting?maptype=tile",
+    "changedSinceSummer2025": [
+      "AL",
+      "CA",
+      "FL",
+      "LA",
+      "MO",
+      "NC",
+      "OH",
+      "TN",
+      "TX",
+      "UT"
+    ],
+    "summary": "NCSL reports ten states changed congressional maps since summer 2025. District results from 2024 are historical geography and have not been reaggregated to those 2026 lines.",
+    "virginia": "NCSL says the May 8, 2026 state supreme court ruling overturned the 2026 maps and the 2021 maps remain in effect.",
+    "marylandNewYork": "NCSL says new maps will not be in effect for 2026 in Maryland or New York.",
+    "limitations": "State-level warning only. Not a boundary comparison or an estimate of partisan seat gains. Litigation remains fluid."
+  },
+  "midtermHistory": {
+    "source": "https://www.presidency.ucsb.edu/statistics/data/seats-congress-gainedlost-the-presidents-party-mid-term-elections",
+    "sourceUpdated": "2026-07-13",
+    "definition": "Seat change for the president's party, as reported by the American Presidency Project from House and Senate party-division records. Independents/progressives are attributed to their caucus. Conventions can differ from election-night seat-change counts.",
+    "rows": [
+      {
+        "year": 1934,
+        "president": "Franklin D. Roosevelt",
+        "party": "D",
+        "houseChange": 9,
+        "senateChange": 9
+      },
+      {
+        "year": 1938,
+        "president": "Franklin D. Roosevelt",
+        "party": "D",
+        "houseChange": -72,
+        "senateChange": -7
+      },
+      {
+        "year": 1942,
+        "president": "Franklin D. Roosevelt",
+        "party": "D",
+        "houseChange": -45,
+        "senateChange": -9
+      },
+      {
+        "year": 1946,
+        "president": "Harry S. Truman",
+        "party": "D",
+        "houseChange": -56,
+        "senateChange": -12
+      },
+      {
+        "year": 1950,
+        "president": "Harry S. Truman",
+        "party": "D",
+        "houseChange": -28,
+        "senateChange": -6
+      },
+      {
+        "year": 1954,
+        "president": "Dwight D. Eisenhower",
+        "party": "R",
+        "houseChange": -18,
+        "senateChange": -1
+      },
+      {
+        "year": 1958,
+        "president": "Dwight D. Eisenhower",
+        "party": "R",
+        "houseChange": -48,
+        "senateChange": -13
+      },
+      {
+        "year": 1962,
+        "president": "John F. Kennedy",
+        "party": "D",
+        "houseChange": -4,
+        "senateChange": 3
+      },
+      {
+        "year": 1966,
+        "president": "Lyndon B. Johnson",
+        "party": "D",
+        "houseChange": -47,
+        "senateChange": -4
+      },
+      {
+        "year": 1970,
+        "president": "Richard Nixon",
+        "party": "R",
+        "houseChange": -12,
+        "senateChange": 2
+      },
+      {
+        "year": 1974,
+        "president": "Gerald R. Ford",
+        "party": "R",
+        "houseChange": -48,
+        "senateChange": -5
+      },
+      {
+        "year": 1978,
+        "president": "Jimmy Carter",
+        "party": "D",
+        "houseChange": -15,
+        "senateChange": -3
+      },
+      {
+        "year": 1982,
+        "president": "Ronald Reagan",
+        "party": "R",
+        "houseChange": -26,
+        "senateChange": 1
+      },
+      {
+        "year": 1986,
+        "president": "Ronald Reagan",
+        "party": "R",
+        "houseChange": -5,
+        "senateChange": -8
+      },
+      {
+        "year": 1990,
+        "president": "George H. W. Bush",
+        "party": "R",
+        "houseChange": -8,
+        "senateChange": -1
+      },
+      {
+        "year": 1994,
+        "president": "Bill Clinton",
+        "party": "D",
+        "houseChange": -54,
+        "senateChange": -8
+      },
+      {
+        "year": 1998,
+        "president": "Bill Clinton",
+        "party": "D",
+        "houseChange": 4,
+        "senateChange": 0
+      },
+      {
+        "year": 2002,
+        "president": "George W. Bush",
+        "party": "R",
+        "houseChange": 8,
+        "senateChange": 2
+      },
+      {
+        "year": 2006,
+        "president": "George W. Bush",
+        "party": "R",
+        "houseChange": -30,
+        "senateChange": -6
+      },
+      {
+        "year": 2010,
+        "president": "Barack Obama",
+        "party": "D",
+        "houseChange": -63,
+        "senateChange": -6
+      },
+      {
+        "year": 2014,
+        "president": "Barack Obama",
+        "party": "D",
+        "houseChange": -13,
+        "senateChange": -9
+      },
+      {
+        "year": 2018,
+        "president": "Donald Trump",
+        "party": "R",
+        "houseChange": -41,
+        "senateChange": 2
+      },
+      {
+        "year": 2022,
+        "president": "Joe Biden",
+        "party": "D",
+        "houseChange": -9,
+        "senateChange": 1
+      }
+    ],
+    "notes": "Historical association is not a 2026 forecast. Trump is serving nonconsecutive terms, which complicates simple first-term/second-term analogies."
+  }
+}

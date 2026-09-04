@@ -1,0 +1,115 @@
+{
+  "model": "Midterm Atlas",
+  "version": "1.0",
+  "snapshot": "2026-09-04",
+  "scope": "Congressional scenario lab, current qualitative ratings, and governor reference coverage",
+  "nationalReference": {
+    "value": 6.976744186,
+    "unit": "D-minus-R two-party percentage points",
+    "source": "https://d3nkl3psvxxpe9.cloudfront.net/documents/econTabReport_yVe1kKt.pdf",
+    "sourceRawShares": {
+      "D": 46,
+      "R": 40
+    },
+    "fieldDates": [
+      "2026-08-28",
+      "2026-08-31"
+    ],
+    "sampleSizeQuestionRV": 1434,
+    "notPollingAverage": true
+  },
+  "parameters": {
+    "iterations": 10000,
+    "seed": 20261103,
+    "nationalSigma": 3,
+    "regionalSigma": 1.5,
+    "localSigma": 5,
+    "imputedHouseMargin": 35,
+    "imputationExtraSigma": 10,
+    "changedMapExtraSigma": 4,
+    "pollPriorSigma": 7,
+    "pollExtraSigma": 3
+  },
+  "coverage": {
+    "houseHistoricalDistricts": 435,
+    "senateRaces": 35,
+    "senatePolledRaces": 7,
+    "governorStateRaces": 36,
+    "houseMissingContestedMargins": 37
+  },
+  "limitations": [
+    "Not historically calibrated. No backtest scores are supplied.",
+    "House simulations retain 2024 geography; extra variance does not remap districts.",
+    "Senate survey coverage is selective and dates differ.",
+    "Separate chamber simulations cannot be combined into joint control probabilities.",
+    "No third-party win model, ranked-choice transfer model, or runoff simulation.",
+    "Fixed snapshot, no live updating."
+  ],
+  "sources": [
+    {
+      "file": "cook-house-competitive-ratings.json",
+      "sha256": "0b6f3f4484e341bdc1dbde46906f91da1a0f26816bd70e379ebd6d56f3d40f91",
+      "bytes": 2794
+    },
+    {
+      "file": "election-context.json",
+      "sha256": "189764a823aef13f3f5815f74ef7b300c48c27aa37f0c079210fce7f7bd1b64f",
+      "bytes": 6455
+    },
+    {
+      "file": "generic-ballot-polls.json",
+      "sha256": "4eaf0d98cf07dd6a4d59b89517afd70dd56be9bbcd6da0a9e59ba86147b7ae99",
+      "bytes": 6144
+    },
+    {
+      "file": "governors.json",
+      "sha256": "72af023ca222fce51560db6e979ca5029b399ff6b5275a18e54279f8a28b1fd1",
+      "bytes": 23211
+    },
+    {
+      "file": "house-2024-baseline.csv",
+      "sha256": "fd90264ce5257d2ccda189ff1cb1b061921ec38dd7e16f8fba181ee601e10840",
+      "bytes": 41203
+    },
+    {
+      "file": "house-2024-baseline.json",
+      "sha256": "1a7b856773231a04e6b9ca841f8b53e0490f8f7ba8f4dfb7c77451f06888bfc5",
+      "bytes": 538473
+    },
+    {
+      "file": "mit-house-2024-v14-rows.csv",
+      "sha256": "d8392414186bb33764fd62c6897d4fd328406fa800dd1f7f707ad249e4cd511e",
+      "bytes": 167701
+    },
+    {
+      "file": "national-generic-ballot.json",
+      "sha256": "9fd596dd6db1120d321e9dbfd68feb35bf8a2100b97b7fb2aff0de4d157febb1",
+      "bytes": 629
+    },
+    {
+      "file": "presidential-2024.csv",
+      "sha256": "518de8dfc08f5796001031da0a4206e70cab503c78565ca3c51c37842d3d5852",
+      "bytes": 3528
+    },
+    {
+      "file": "presidential-2024.json",
+      "sha256": "4ebad9f729e550da14c05e49b2aa75a8b319a0d302d377aac1287f2744cfc199",
+      "bytes": 15267
+    },
+    {
+      "file": "senate-polls.json",
+      "sha256": "e9d925aae720c413267ca599cddaca34ac1433408020dbbb0d541127de8865e5",
+      "bytes": 16038
+    },
+    {
+      "file": "senate-ratings-cook.json",
+      "sha256": "9c4b89164c70f590069d4e4eac6000061ceb1f6c43ec6b06615b64e11c113ab7",
+      "bytes": 3555
+    },
+    {
+      "file": "senate-roster.json",
+      "sha256": "f59179253b0837064a28dde53d6f94cbbed23120cf0a6b6e59ce3cf1af255796",
+      "bytes": 26393
+    }
+  ]
+}

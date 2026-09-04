@@ -1,0 +1,171 @@
+{
+  "provider": "The Cook Political Report",
+  "sourceUrl": "https://www.cookpolitical.com/ratings/senate-race-ratings",
+  "sourceDate": "2026-08-20",
+  "retrievedAt": "2026-09-04",
+  "sourceAccess": "Full 35-race primary ratings table retrieved from indexed publisher text; direct HTTP fetch returned 403.",
+  "ratings": [
+    {
+      "state": "AK",
+      "rating": "Toss-up"
+    },
+    {
+      "state": "AL",
+      "rating": "Solid R"
+    },
+    {
+      "state": "AR",
+      "rating": "Solid R"
+    },
+    {
+      "state": "CO",
+      "rating": "Solid D"
+    },
+    {
+      "state": "DE",
+      "rating": "Solid D"
+    },
+    {
+      "state": "FL",
+      "rating": "Solid R"
+    },
+    {
+      "state": "GA",
+      "rating": "Lean D"
+    },
+    {
+      "state": "IA",
+      "rating": "Toss-up"
+    },
+    {
+      "state": "ID",
+      "rating": "Solid R"
+    },
+    {
+      "state": "IL",
+      "rating": "Solid D"
+    },
+    {
+      "state": "KS",
+      "rating": "Likely R"
+    },
+    {
+      "state": "KY",
+      "rating": "Solid R"
+    },
+    {
+      "state": "LA",
+      "rating": "Solid R"
+    },
+    {
+      "state": "MA",
+      "rating": "Solid D"
+    },
+    {
+      "state": "ME",
+      "rating": "Toss-up"
+    },
+    {
+      "state": "MI",
+      "rating": "Toss-up"
+    },
+    {
+      "state": "MN",
+      "rating": "Likely D"
+    },
+    {
+      "state": "MS",
+      "rating": "Solid R"
+    },
+    {
+      "state": "MT",
+      "rating": "Solid R"
+    },
+    {
+      "state": "NC",
+      "rating": "Lean D"
+    },
+    {
+      "state": "NE",
+      "rating": "Likely R"
+    },
+    {
+      "state": "NH",
+      "rating": "Lean D"
+    },
+    {
+      "state": "NJ",
+      "rating": "Solid D"
+    },
+    {
+      "state": "NM",
+      "rating": "Solid D"
+    },
+    {
+      "state": "OH",
+      "rating": "Toss-up"
+    },
+    {
+      "state": "OK",
+      "rating": "Solid R"
+    },
+    {
+      "state": "OR",
+      "rating": "Solid D"
+    },
+    {
+      "state": "RI",
+      "rating": "Solid D"
+    },
+    {
+      "state": "SC",
+      "rating": "Solid R"
+    },
+    {
+      "state": "SD",
+      "rating": "Solid R"
+    },
+    {
+      "state": "TN",
+      "rating": "Solid R"
+    },
+    {
+      "state": "TX",
+      "rating": "Toss-up"
+    },
+    {
+      "state": "VA",
+      "rating": "Solid D"
+    },
+    {
+      "state": "WV",
+      "rating": "Solid R"
+    },
+    {
+      "state": "WY",
+      "rating": "Solid R"
+    }
+  ],
+  "sourceSummary": {
+    "solidD": 9,
+    "likelyD": 1,
+    "leanD": 3,
+    "tossup": 6,
+    "leanR": 0,
+    "likelyR": 2,
+    "solidR": 14,
+    "democraticCaucusHoldovers": 34,
+    "republicanHoldovers": 31
+  },
+  "cautions": [
+    "This is a dated editorial ratings snapshot, not a polling average or numerical probability.",
+    "Do not describe this as a verified September 4 ratings update. The detailed table is dated August 20.",
+    "The general ratings landing page has a September 2 summary date with a different aggregate display; its Senate totals cannot be reconciled to the detailed table. The August 20 detailed table is the latest complete table verified in this research.",
+    "Current chamber composition and incumbents should use Senate.gov, not the rating labels.",
+    "Candidate and party ratings are attributed to the provider and should remain distinct from any custom illustrative model."
+  ],
+  "furtherSourceUrls": [
+    "https://www.cookpolitical.com/analysis/senate/senate-overview/texas-and-iowa-senate-races-move-toss-races-governor-also-move",
+    "https://www.cookpolitical.com/ratings"
+  ]
+}

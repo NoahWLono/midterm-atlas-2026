@@ -1,0 +1,20 @@
+{
+  "id": "national-emerson-2026-08-17",
+  "pollster": "Emerson College Polling",
+  "sourceUrl": "https://emersoncollegepolling.com/august-2026-national-poll/",
+  "fieldStart": "2026-08-16",
+  "fieldEnd": "2026-08-17",
+  "publishedAt": "2026-08-20",
+  "sampleSize": 1000,
+  "population": "LV",
+  "democraticPercent": 51,
+  "republicanPercent": 43,
+  "undecidedPercent": 6,
+  "reportedInterval": {
+    "type": "credibility interval",
+    "plusMinus": 3
+  },
+  "outcome": "National generic congressional ballot",
+  "retrievedAt": "2026-09-04",
+  "caution": "One survey; not a national polling average or direct Senate forecast."
+}

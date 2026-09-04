@@ -1,0 +1,534 @@
+{
+  "title": "2024 presidential results by state and District of Columbia",
+  "source": "https://www.fec.gov/resources/cms-content/documents/2024presgeresults.pdf",
+  "sourceAgency": "Federal Election Commission, compiled from state election offices",
+  "sourceElectionDate": "2024-11-05",
+  "retrievedAt": "2026-09-04",
+  "extraction": "Manual transcription of candidate votes from PDF pages 3 and 5 and total votes from page 6; all 51 row totals checked against national FEC totals.",
+  "marginDefinition": "100 * (Harris votes - Trump votes) / total presidential votes. Positive = D, negative = R. Unit: percentage points.",
+  "twoPartyMarginDefinition": "100 * (Harris votes - Trump votes) / (Harris votes + Trump votes). Distinct from all-vote margin.",
+  "national": {
+    "harrisVotes": 75017613,
+    "trumpVotes": 77302580,
+    "totalVotes": 155238302,
+    "demMinusRepMargin": -1.471909
+  },
+  "dataCautions": [
+    "Historical presidential margins are not Senate forecasts, race ratings, or poll results.",
+    "Maine figures use the FEC statewide totals; do not confuse with final ranked-choice rounds or congressional-district electoral votes.",
+    "District of Columbia is included in the presidential dataset but has no voting Senate seats.",
+    "The FEC PDF was successfully retrieved through web; an XLSX copy was not downloaded. The FEC landing page links an Excel version for independent reproduction."
+  ],
+  "states": [
+    {
+      "state": "AL",
+      "harrisVotes": 772412,
+      "trumpVotes": 1462616,
+      "totalVotes": 2265090,
+      "demMinusRepMargin": -30.471372,
+      "twoPartyDemMinusRepMargin": -30.881224,
+      "harrisPercent": 34.10072,
+      "trumpPercent": 64.572092
+    },
+    {
+      "state": "AK",
+      "harrisVotes": 140026,
+      "trumpVotes": 184458,
+      "totalVotes": 338177,
+      "demMinusRepMargin": -13.138682,
+      "twoPartyDemMinusRepMargin": -13.693125,
+      "harrisPercent": 41.406128,
+      "trumpPercent": 54.544809
+    },
+    {
+      "state": "AZ",
+      "harrisVotes": 1582860,
+      "trumpVotes": 1770242,
+      "totalVotes": 3390161,
+      "demMinusRepMargin": -5.52723,
+      "twoPartyDemMinusRepMargin": -5.588318,
+      "harrisPercent": 46.689818,
+      "trumpPercent": 52.217048
+    },
+    {
+      "state": "AR",
+      "harrisVotes": 396905,
+      "trumpVotes": 759241,
+      "totalVotes": 1182676,
+      "demMinusRepMargin": -30.636962,
+      "twoPartyDemMinusRepMargin": -31.339986,
+      "harrisPercent": 33.55991,
+      "trumpPercent": 64.196872
+    },
+    {
+      "state": "CA",
+      "harrisVotes": 9276179,
+      "trumpVotes": 6081697,
+      "totalVotes": 15865475,
+      "demMinusRepMargin": 20.134802,
+      "twoPartyDemMinusRepMargin": 20.800285,
+      "harrisPercent": 58.467704,
+      "trumpPercent": 38.332902
+    },
+    {
+      "state": "CO",
+      "harrisVotes": 1728159,
+      "trumpVotes": 1377441,
+      "totalVotes": 3192745,
+      "demMinusRepMargin": 10.984842,
+      "twoPartyDemMinusRepMargin": 11.293083,
+      "harrisPercent": 54.127686,
+      "trumpPercent": 43.142844
+    },
+    {
+      "state": "CT",
+      "harrisVotes": 992053,
+      "trumpVotes": 736918,
+      "totalVotes": 1759010,
+      "demMinusRepMargin": 14.504466,
+      "twoPartyDemMinusRepMargin": 14.756465,
+      "harrisPercent": 56.398372,
+      "trumpPercent": 41.893906
+    },
+    {
+      "state": "DE",
+      "harrisVotes": 289758,
+      "trumpVotes": 214351,
+      "totalVotes": 512912,
+      "demMinusRepMargin": 14.701742,
+      "twoPartyDemMinusRepMargin": 14.958471,
+      "harrisPercent": 56.492732,
+      "trumpPercent": 41.790989
+    },
+    {
+      "state": "DC",
+      "harrisVotes": 294185,
+      "trumpVotes": 21076,
+      "totalVotes": 325869,
+      "demMinusRepMargin": 83.809445,
+      "twoPartyDemMinusRepMargin": 86.629491,
+      "harrisPercent": 90.277075,
+      "trumpPercent": 6.46763
+    },
+    {
+      "state": "FL",
+      "harrisVotes": 4683038,
+      "trumpVotes": 6110125,
+      "totalVotes": 10893752,
+      "demMinusRepMargin": -13.10005,
+      "twoPartyDemMinusRepMargin": -13.222139,
+      "harrisPercent": 42.988293,
+      "trumpPercent": 56.088343
+    },
+    {
+      "state": "GA",
+      "harrisVotes": 2548017,
+      "trumpVotes": 2663117,
+      "totalVotes": 5250905,
+      "demMinusRepMargin": -2.192003,
+      "twoPartyDemMinusRepMargin": -2.208732,
+      "harrisPercent": 48.525292,
+      "trumpPercent": 50.717295
+    },
+    {
+      "state": "HI",
+      "harrisVotes": 313044,
+      "trumpVotes": 193661,
+      "totalVotes": 516701,
+      "demMinusRepMargin": 23.104852,
+      "twoPartyDemMinusRepMargin": 23.560652,
+      "harrisPercent": 60.585135,
+      "trumpPercent": 37.480284
+    },
+    {
+      "state": "ID",
+      "harrisVotes": 274972,
+      "trumpVotes": 605246,
+      "totalVotes": 905057,
+      "demMinusRepMargin": -36.492066,
+      "twoPartyDemMinusRepMargin": -37.521841,
+      "harrisPercent": 30.381733,
+      "trumpPercent": 66.873799
+    },
+    {
+      "state": "IL",
+      "harrisVotes": 3062863,
+      "trumpVotes": 2449079,
+      "totalVotes": 5633310,
+      "demMinusRepMargin": 10.895619,
+      "twoPartyDemMinusRepMargin": 11.135531,
+      "harrisPercent": 54.370574,
+      "trumpPercent": 43.474955
+    },
+    {
+      "state": "IN",
+      "harrisVotes": 1163603,
+      "trumpVotes": 1720347,
+      "totalVotes": 2936677,
+      "demMinusRepMargin": -18.958299,
+      "twoPartyDemMinusRepMargin": -19.304912,
+      "harrisPercent": 39.623118,
+      "trumpPercent": 58.581417
+    },
+    {
+      "state": "IA",
+      "harrisVotes": 707278,
+      "trumpVotes": 927019,
+      "totalVotes": 1663506,
+      "demMinusRepMargin": -13.209511,
+      "twoPartyDemMinusRepMargin": -13.445598,
+      "harrisPercent": 42.51731,
+      "trumpPercent": 55.72682
+    },
+    {
+      "state": "KS",
+      "harrisVotes": 544853,
+      "trumpVotes": 758802,
+      "totalVotes": 1327591,
+      "demMinusRepMargin": -16.115581,
+      "twoPartyDemMinusRepMargin": -16.411474,
+      "harrisPercent": 41.040727,
+      "trumpPercent": 57.156308
+    },
+    {
+      "state": "KY",
+      "harrisVotes": 704043,
+      "trumpVotes": 1337494,
+      "totalVotes": 2074530,
+      "demMinusRepMargin": -30.534675,
+      "twoPartyDemMinusRepMargin": -31.028142,
+      "harrisPercent": 33.93747,
+      "trumpPercent": 64.472145
+    },
+    {
+      "state": "LA",
+      "harrisVotes": 766870,
+      "trumpVotes": 1208505,
+      "totalVotes": 2006975,
+      "demMinusRepMargin": -22.005008,
+      "twoPartyDemMinusRepMargin": -22.357021,
+      "harrisPercent": 38.210242,
+      "trumpPercent": 60.215249
+    },
+    {
+      "state": "ME",
+      "harrisVotes": 435652,
+      "trumpVotes": 377977,
+      "totalVotes": 831375,
+      "demMinusRepMargin": 6.937303,
+      "twoPartyDemMinusRepMargin": 7.088612,
+      "harrisPercent": 52.401383,
+      "trumpPercent": 45.464081
+    },
+    {
+      "state": "MD",
+      "harrisVotes": 1902577,
+      "trumpVotes": 1035550,
+      "totalVotes": 3038334,
+      "demMinusRepMargin": 28.536264,
+      "twoPartyDemMinusRepMargin": 29.509514,
+      "harrisPercent": 62.619087,
+      "trumpPercent": 34.082823
+    },
+    {
+      "state": "MA",
+      "harrisVotes": 2126518,
+      "trumpVotes": 1251303,
+      "totalVotes": 3473668,
+      "demMinusRepMargin": 25.195701,
+      "twoPartyDemMinusRepMargin": 25.910639,
+      "harrisPercent": 61.218228,
+      "trumpPercent": 36.022527
+    },
+    {
+      "state": "MI",
+      "harrisVotes": 2736533,
+      "trumpVotes": 2816636,
+      "totalVotes": 5664186,
+      "demMinusRepMargin": -1.414201,
+      "twoPartyDemMinusRepMargin": -1.442474,
+      "harrisPercent": 48.312909,
+      "trumpPercent": 49.72711
+    },
+    {
+      "state": "MN",
+      "harrisVotes": 1656979,
+      "trumpVotes": 1519032,
+      "totalVotes": 3253920,
+      "demMinusRepMargin": 4.23941,
+      "twoPartyDemMinusRepMargin": 4.343404,
+      "harrisPercent": 50.922549,
+      "trumpPercent": 46.683139
+    },
+    {
+      "state": "MS",
+      "harrisVotes": 466668,
+      "trumpVotes": 747744,
+      "totalVotes": 1228008,
+      "demMinusRepMargin": -22.888776,
+      "twoPartyDemMinusRepMargin": -23.145028,
+      "harrisPercent": 38.002033,
+      "trumpPercent": 60.890809
+    },
+    {
+      "state": "MO",
+      "harrisVotes": 1200599,
+      "trumpVotes": 1751986,
+      "totalVotes": 2995327,
+      "demMinusRepMargin": -18.408241,
+      "twoPartyDemMinusRepMargin": -18.674721,
+      "harrisPercent": 40.082402,
+      "trumpPercent": 58.490642
+    },
+    {
+      "state": "MT",
+      "harrisVotes": 231906,
+      "trumpVotes": 352079,
+      "totalVotes": 602990,
+      "demMinusRepMargin": -19.929518,
+      "twoPartyDemMinusRepMargin": -20.578097,
+      "harrisPercent": 38.459344,
+      "trumpPercent": 58.388862
+    },
+    {
+      "state": "NE",
+      "harrisVotes": 369995,
+      "trumpVotes": 564816,
+      "totalVotes": 952182,
+      "demMinusRepMargin": -20.460479,
+      "twoPartyDemMinusRepMargin": -20.840683,
+      "harrisPercent": 38.857592,
+      "trumpPercent": 59.318072
+    },
+    {
+      "state": "NV",
+      "harrisVotes": 705197,
+      "trumpVotes": 751205,
+      "totalVotes": 1484840,
+      "demMinusRepMargin": -3.098516,
+      "twoPartyDemMinusRepMargin": -3.159018,
+      "harrisPercent": 47.493131,
+      "trumpPercent": 50.591646
+    },
+    {
+      "state": "NH",
+      "harrisVotes": 418488,
+      "trumpVotes": 395523,
+      "totalVotes": 826189,
+      "demMinusRepMargin": 2.77963,
+      "twoPartyDemMinusRepMargin": 2.821215,
+      "harrisPercent": 50.652817,
+      "trumpPercent": 47.873186
+    },
+    {
+      "state": "NJ",
+      "harrisVotes": 2220713,
+      "trumpVotes": 1968215,
+      "totalVotes": 4272725,
+      "demMinusRepMargin": 5.909531,
+      "twoPartyDemMinusRepMargin": 6.027747,
+      "harrisPercent": 51.974162,
+      "trumpPercent": 46.064631
+    },
+    {
+      "state": "NM",
+      "harrisVotes": 478802,
+      "trumpVotes": 423391,
+      "totalVotes": 923403,
+      "demMinusRepMargin": 6.000739,
+      "twoPartyDemMinusRepMargin": 6.141812,
+      "harrisPercent": 51.8519,
+      "trumpPercent": 45.851161
+    },
+    {
+      "state": "NY",
+      "harrisVotes": 4619195,
+      "trumpVotes": 3578899,
+      "totalVotes": 8262495,
+      "demMinusRepMargin": 12.590579,
+      "twoPartyDemMinusRepMargin": 12.689486,
+      "harrisPercent": 55.905571,
+      "trumpPercent": 43.314991
+    },
+    {
+      "state": "NC",
+      "harrisVotes": 2715375,
+      "trumpVotes": 2898423,
+      "totalVotes": 5699141,
+      "demMinusRepMargin": -3.211852,
+      "twoPartyDemMinusRepMargin": -3.26068,
+      "harrisPercent": 47.645338,
+      "trumpPercent": 50.857191
+    },
+    {
+      "state": "ND",
+      "harrisVotes": 112327,
+      "trumpVotes": 246505,
+      "totalVotes": 368155,
+      "demMinusRepMargin": -36.446062,
+      "twoPartyDemMinusRepMargin": -37.392986,
+      "harrisPercent": 30.51079,
+      "trumpPercent": 66.956852
+    },
+    {
+      "state": "OH",
+      "harrisVotes": 2533699,
+      "trumpVotes": 3180116,
+      "totalVotes": 5767788,
+      "demMinusRepMargin": -11.207364,
+      "twoPartyDemMinusRepMargin": -11.313229,
+      "harrisPercent": 43.928435,
+      "trumpPercent": 55.135799
+    },
+    {
+      "state": "OK",
+      "harrisVotes": 499599,
+      "trumpVotes": 1036213,
+      "totalVotes": 1566173,
+      "demMinusRepMargin": -34.262754,
+      "twoPartyDemMinusRepMargin": -34.940084,
+      "harrisPercent": 31.89935,
+      "trumpPercent": 66.162103
+    },
+    {
+      "state": "OR",
+      "harrisVotes": 1240600,
+      "trumpVotes": 919480,
+      "totalVotes": 2244493,
+      "demMinusRepMargin": 14.307017,
+      "twoPartyDemMinusRepMargin": 14.866116,
+      "harrisPercent": 55.273062,
+      "trumpPercent": 40.966044
+    },
+    {
+      "state": "PA",
+      "harrisVotes": 3423042,
+      "trumpVotes": 3543308,
+      "totalVotes": 7058732,
+      "demMinusRepMargin": -1.70379,
+      "twoPartyDemMinusRepMargin": -1.726385,
+      "harrisPercent": 48.493724,
+      "trumpPercent": 50.197514
+    },
+    {
+      "state": "RI",
+      "harrisVotes": 285156,
+      "trumpVotes": 214406,
+      "totalVotes": 513386,
+      "demMinusRepMargin": 13.781054,
+      "twoPartyDemMinusRepMargin": 14.162406,
+      "harrisPercent": 55.544171,
+      "trumpPercent": 41.763118
+    },
+    {
+      "state": "SC",
+      "harrisVotes": 1028452,
+      "trumpVotes": 1483747,
+      "totalVotes": 2548140,
+      "demMinusRepMargin": -17.867739,
+      "twoPartyDemMinusRepMargin": -18.123365,
+      "harrisPercent": 40.360891,
+      "trumpPercent": 58.22863
+    },
+    {
+      "state": "SD",
+      "harrisVotes": 146859,
+      "trumpVotes": 272081,
+      "totalVotes": 428922,
+      "demMinusRepMargin": -29.194585,
+      "twoPartyDemMinusRepMargin": -29.890199,
+      "harrisPercent": 34.239092,
+      "trumpPercent": 63.433678
+    },
+    {
+      "state": "TN",
+      "harrisVotes": 1056265,
+      "trumpVotes": 1966865,
+      "totalVotes": 3063942,
+      "demMinusRepMargin": -29.719884,
+      "twoPartyDemMinusRepMargin": -30.1211,
+      "harrisPercent": 34.474053,
+      "trumpPercent": 64.193937
+    },
+    {
+      "state": "TX",
+      "harrisVotes": 4835250,
+      "trumpVotes": 6393597,
+      "totalVotes": 11388674,
+      "demMinusRepMargin": -13.683305,
+      "twoPartyDemMinusRepMargin": -13.878068,
+      "harrisPercent": 42.456655,
+      "trumpPercent": 56.13996
+    },
+    {
+      "state": "UT",
+      "harrisVotes": 562566,
+      "trumpVotes": 883818,
+      "totalVotes": 1488494,
+      "demMinusRepMargin": -21.582351,
+      "twoPartyDemMinusRepMargin": -22.210699,
+      "harrisPercent": 37.794308,
+      "trumpPercent": 59.376659
+    },
+    {
+      "state": "VT",
+      "harrisVotes": 235791,
+      "trumpVotes": 119395,
+      "totalVotes": 369422,
+      "demMinusRepMargin": 31.507598,
+      "twoPartyDemMinusRepMargin": 32.770436,
+      "harrisPercent": 63.827005,
+      "trumpPercent": 32.319407
+    },
+    {
+      "state": "VA",
+      "harrisVotes": 2333778,
+      "trumpVotes": 2074097,
+      "totalVotes": 4503288,
+      "demMinusRepMargin": 5.766476,
+      "twoPartyDemMinusRepMargin": 5.891297,
+      "harrisPercent": 51.823867,
+      "trumpPercent": 46.057392
+    },
+    {
+      "state": "WA",
+      "harrisVotes": 2245849,
+      "trumpVotes": 1530923,
+      "totalVotes": 3924243,
+      "demMinusRepMargin": 18.218189,
+      "twoPartyDemMinusRepMargin": 18.929551,
+      "harrisPercent": 57.230121,
+      "trumpPercent": 39.011932
+    },
+    {
+      "state": "WV",
+      "harrisVotes": 214309,
+      "trumpVotes": 533556,
+      "totalVotes": 762582,
+      "demMinusRepMargin": -41.863957,
+      "twoPartyDemMinusRepMargin": -42.687785,
+      "harrisPercent": 28.103076,
+      "trumpPercent": 69.967033
+    },
+    {
+      "state": "WI",
+      "harrisVotes": 1668229,
+      "trumpVotes": 1697626,
+      "totalVotes": 3422918,
+      "demMinusRepMargin": -0.858829,
+      "twoPartyDemMinusRepMargin": -0.873389,
+      "harrisPercent": 48.737042,
+      "trumpPercent": 49.595871
+    },
+    {
+      "state": "WY",
+      "harrisVotes": 69527,
+      "trumpVotes": 192633,
+      "totalVotes": 269048,
+      "demMinusRepMargin": -45.756148,
+      "twoPartyDemMinusRepMargin": -46.958346,
+      "harrisPercent": 25.841857,
+      "trumpPercent": 71.598005
+    }
+  ]
+}

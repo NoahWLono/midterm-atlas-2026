@@ -1,0 +1,823 @@
+{
+  "title": "2026 state gubernatorial election companion",
+  "retrievedAt": "2026-09-04",
+  "electionDate": "2026-11-03",
+  "scope": "36 U.S. state governorships; three territorial contests listed separately. No election model or probabilities.",
+  "summary": {
+    "stateRaces": 36,
+    "heldD": 18,
+    "heldR": 18,
+    "openSeats": 18,
+    "incumbentsSeekingReelection": 18,
+    "currentStateGovernorsD": 24,
+    "currentStateGovernorsR": 26,
+    "notUpD": 6,
+    "notUpR": 8,
+    "territorialRacesExcluded": 3
+  },
+  "races": [
+    {
+      "id": "AL-GOV-2026",
+      "state": "AL",
+      "stateName": "Alabama",
+      "currentGovernor": "Kay Ivey",
+      "heldParty": "R",
+      "incumbentStatus": "term-limited",
+      "openSeat": true,
+      "termYears": 4,
+      "electionDate": "2026-11-03",
+      "rating": "Solid R",
+      "ratingDate": "2026-08-27",
+      "sourceRefs": [
+        "nga-governors",
+        "nga-roster",
+        "nga-elections",
+        "cook-2026-08-27"
+      ]
+    },
+    {
+      "id": "AK-GOV-2026",
+      "state": "AK",
+      "stateName": "Alaska",
+      "currentGovernor": "Mike Dunleavy",
+      "heldParty": "R",
+      "incumbentStatus": "term-limited",
+      "openSeat": true,
+      "termYears": 4,
+      "electionDate": "2026-11-03",
+      "rating": "Likely R",
+      "ratingDate": "2026-08-27",
+      "sourceRefs": [
+        "nga-governors",
+        "nga-roster",
+        "nga-elections",
+        "cook-2026-08-27"
+      ]
+    },
+    {
+      "id": "AZ-GOV-2026",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "currentGovernor": "Katie Hobbs",
+      "heldParty": "D",
+      "incumbentStatus": "seeking-reelection",
+      "openSeat": false,
+      "termYears": 4,
+      "electionDate": "2026-11-03",
+      "rating": "Lean D",
+      "ratingDate": "2026-08-27",
+      "sourceRefs": [
+        "nga-governors",
+        "nga-roster",
+        "nga-elections",
+        "cook-2026-08-27"
+      ]
+    },
+    {
+      "id": "AR-GOV-2026",
+      "state": "AR",
+      "stateName": "Arkansas",
+      "currentGovernor": "Sarah Huckabee Sanders",
+      "heldParty": "R",
+      "incumbentStatus": "seeking-reelection",
+      "openSeat": false,
+      "termYears": 4,
+      "electionDate": "2026-11-03",
+      "rating": "Solid R",
+      "ratingDate": "2026-08-27",
+      "sourceRefs": [
+        "nga-governors",
+        "nga-roster",
+        "nga-elections",
+        "cook-2026-08-27"
+      ]
+    },
+    {
+      "id": "CA-GOV-2026",
+      "state": "CA",
+      "stateName": "California",
+      "currentGovernor": "Gavin Newsom",
+      "heldParty": "D",
+      "incumbentStatus": "term-limited",
+      "openSeat": true,
+      "termYears": 4,
+      "electionDate": "2026-11-03",
+      "rating": "Solid D",
+      "ratingDate": "2026-08-27",
+      "sourceRefs": [
+        "nga-governors",
+        "nga-roster",
+        "nga-elections",
+        "cook-2026-08-27"
+      ]
+    },
+    {
+      "id": "CO-GOV-2026",
+      "state": "CO",
+      "stateName": "Colorado",
+      "currentGovernor": "Jared Polis",
+      "heldParty": "D",
+      "incumbentStatus": "term-limited",
+      "openSeat": true,
+      "termYears": 4,
+      "electionDate": "2026-11-03",
+      "rating": "Solid D",
+      "ratingDate": "2026-08-27",
+      "sourceRefs": [
+        "nga-governors",
+        "nga-roster",
+        "nga-elections",
+        "cook-2026-08-27"
+      ]
+    },
+    {
+      "id": "CT-GOV-2026",
+      "state": "CT",
+      "stateName": "Connecticut",
+      "currentGovernor": "Ned Lamont",
+      "heldParty": "D",
+      "incumbentStatus": "seeking-reelection",
+      "openSeat": false,
+      "termYears": 4,
+      "electionDate": "2026-11-03",
+      "rating": "Solid D",
+      "ratingDate": "2026-08-27",
+      "sourceRefs": [
+        "nga-governors",
+        "nga-roster",
+        "nga-elections",
+        "cook-2026-08-27"
+      ]
+    },
+    {
+      "id": "FL-GOV-2026",
+      "state": "FL",
+      "stateName": "Florida",
+      "currentGovernor": "Ron DeSantis",
+      "heldParty": "R",
+      "incumbentStatus": "term-limited",
+      "openSeat": true,
+      "termYears": 4,
+      "electionDate": "2026-11-03",
+      "rating": "Likely R",
+      "ratingDate": "2026-08-27",
+      "sourceRefs": [
+        "nga-governors",
+        "nga-roster",
+        "nga-elections",
+        "cook-2026-08-27"
+      ]
+    },
+    {
+      "id": "GA-GOV-2026",
+      "state": "GA",
+      "stateName": "Georgia",
+      "currentGovernor": "Brian Kemp",
+      "heldParty": "R",
+      "incumbentStatus": "term-limited",
+      "openSeat": true,
+      "termYears": 4,
+      "electionDate": "2026-11-03",
+      "rating": "Toss-up",
+      "ratingDate": "2026-08-27",
+      "sourceRefs": [
+        "nga-governors",
+        "nga-roster",
+        "nga-elections",
+        "cook-2026-08-27"
+      ]
+    },
+    {
+      "id": "HI-GOV-2026",
+      "state": "HI",
+      "stateName": "Hawaii",
+      "currentGovernor": "Josh Green",
+      "heldParty": "D",
+      "incumbentStatus": "seeking-reelection",
+      "openSeat": false,
+      "termYears": 4,
+      "electionDate": "2026-11-03",
+      "rating": "Solid D",
+      "ratingDate": "2026-08-27",
+      "sourceRefs": [
+        "nga-governors",
+        "nga-roster",
+        "nga-elections",
+        "cook-2026-08-27"
+      ]
+    },
+    {
+      "id": "ID-GOV-2026",
+      "state": "ID",
+      "stateName": "Idaho",
+      "currentGovernor": "Brad Little",
+      "heldParty": "R",
+      "incumbentStatus": "seeking-reelection",
+      "openSeat": false,
+      "termYears": 4,
+      "electionDate": "2026-11-03",
+      "rating": "Solid R",
+      "ratingDate": "2026-08-27",
+      "sourceRefs": [
+        "nga-governors",
+        "nga-roster",
+        "nga-elections",
+        "cook-2026-08-27"
+      ]
+    },
+    {
+      "id": "IL-GOV-2026",
+      "state": "IL",
+      "stateName": "Illinois",
+      "currentGovernor": "JB Pritzker",
+      "heldParty": "D",
+      "incumbentStatus": "seeking-reelection",
+      "openSeat": false,
+      "termYears": 4,
+      "electionDate": "2026-11-03",
+      "rating": "Solid D",
+      "ratingDate": "2026-08-27",
+      "sourceRefs": [
+        "nga-governors",
+        "nga-roster",
+        "nga-elections",
+        "cook-2026-08-27"
+      ]
+    },
+    {
+      "id": "IA-GOV-2026",
+      "state": "IA",
+      "stateName": "Iowa",
+      "currentGovernor": "Kim Reynolds",
+      "heldParty": "R",
+      "incumbentStatus": "not-seeking-reelection",
+      "openSeat": true,
+      "termYears": 4,
+      "electionDate": "2026-11-03",
+      "rating": "Lean D",
+      "ratingDate": "2026-08-27",
+      "sourceRefs": [
+        "nga-governors",
+        "nga-roster",
+        "nga-elections",
+        "cook-2026-08-27",
+        "ia-retirement"
+      ]
+    },
+    {
+      "id": "KS-GOV-2026",
+      "state": "KS",
+      "stateName": "Kansas",
+      "currentGovernor": "Laura Kelly",
+      "heldParty": "D",
+      "incumbentStatus": "term-limited",
+      "openSeat": true,
+      "termYears": 4,
+      "electionDate": "2026-11-03",
+      "rating": "Lean R",
+      "ratingDate": "2026-08-27",
+      "sourceRefs": [
+        "nga-governors",
+        "nga-roster",
+        "nga-elections",
+        "cook-2026-08-27"
+      ]
+    },
+    {
+      "id": "ME-GOV-2026",
+      "state": "ME",
+      "stateName": "Maine",
+      "currentGovernor": "Janet Mills",
+      "heldParty": "D",
+      "incumbentStatus": "term-limited",
+      "openSeat": true,
+      "termYears": 4,
+      "electionDate": "2026-11-03",
+      "rating": "Solid D",
+      "ratingDate": "2026-08-27",
+      "sourceRefs": [
+        "nga-governors",
+        "nga-roster",
+        "nga-elections",
+        "cook-2026-08-27"
+      ]
+    },
+    {
+      "id": "MD-GOV-2026",
+      "state": "MD",
+      "stateName": "Maryland",
+      "currentGovernor": "Wes Moore",
+      "heldParty": "D",
+      "incumbentStatus": "seeking-reelection",
+      "openSeat": false,
+      "termYears": 4,
+      "electionDate": "2026-11-03",
+      "rating": "Solid D",
+      "ratingDate": "2026-08-27",
+      "sourceRefs": [
+        "nga-governors",
+        "nga-roster",
+        "nga-elections",
+        "cook-2026-08-27"
+      ]
+    },
+    {
+      "id": "MA-GOV-2026",
+      "state": "MA",
+      "stateName": "Massachusetts",
+      "currentGovernor": "Maura Healey",
+      "heldParty": "D",
+      "incumbentStatus": "seeking-reelection",
+      "openSeat": false,
+      "termYears": 4,
+      "electionDate": "2026-11-03",
+      "rating": "Solid D",
+      "ratingDate": "2026-08-27",
+      "sourceRefs": [
+        "nga-governors",
+        "nga-roster",
+        "nga-elections",
+        "cook-2026-08-27"
+      ]
+    },
+    {
+      "id": "MI-GOV-2026",
+      "state": "MI",
+      "stateName": "Michigan",
+      "currentGovernor": "Gretchen Whitmer",
+      "heldParty": "D",
+      "incumbentStatus": "term-limited",
+      "openSeat": true,
+      "termYears": 4,
+      "electionDate": "2026-11-03",
+      "rating": "Lean D",
+      "ratingDate": "2026-08-27",
+      "sourceRefs": [
+        "nga-governors",
+        "nga-roster",
+        "nga-elections",
+        "cook-2026-08-27"
+      ]
+    },
+    {
+      "id": "MN-GOV-2026",
+      "state": "MN",
+      "stateName": "Minnesota",
+      "currentGovernor": "Tim Walz",
+      "heldParty": "D",
+      "incumbentStatus": "not-seeking-reelection",
+      "openSeat": true,
+      "termYears": 4,
+      "electionDate": "2026-11-03",
+      "rating": "Solid D",
+      "ratingDate": "2026-08-27",
+      "sourceRefs": [
+        "nga-governors",
+        "nga-roster",
+        "nga-elections",
+        "cook-2026-08-27",
+        "mn-retirement"
+      ]
+    },
+    {
+      "id": "NE-GOV-2026",
+      "state": "NE",
+      "stateName": "Nebraska",
+      "currentGovernor": "Jim Pillen",
+      "heldParty": "R",
+      "incumbentStatus": "seeking-reelection",
+      "openSeat": false,
+      "termYears": 4,
+      "electionDate": "2026-11-03",
+      "rating": "Solid R",
+      "ratingDate": "2026-08-27",
+      "sourceRefs": [
+        "nga-governors",
+        "nga-roster",
+        "nga-elections",
+        "cook-2026-08-27"
+      ]
+    },
+    {
+      "id": "NV-GOV-2026",
+      "state": "NV",
+      "stateName": "Nevada",
+      "currentGovernor": "Joe Lombardo",
+      "heldParty": "R",
+      "incumbentStatus": "seeking-reelection",
+      "openSeat": false,
+      "termYears": 4,
+      "electionDate": "2026-11-03",
+      "rating": "Toss-up",
+      "ratingDate": "2026-08-27",
+      "sourceRefs": [
+        "nga-governors",
+        "nga-roster",
+        "nga-elections",
+        "cook-2026-08-27"
+      ]
+    },
+    {
+      "id": "NH-GOV-2026",
+      "state": "NH",
+      "stateName": "New Hampshire",
+      "currentGovernor": "Kelly Ayotte",
+      "heldParty": "R",
+      "incumbentStatus": "seeking-reelection",
+      "openSeat": false,
+      "termYears": 2,
+      "electionDate": "2026-11-03",
+      "rating": "Likely R",
+      "ratingDate": "2026-08-27",
+      "sourceRefs": [
+        "nga-governors",
+        "nga-roster",
+        "nga-elections",
+        "cook-2026-08-27"
+      ]
+    },
+    {
+      "id": "NM-GOV-2026",
+      "state": "NM",
+      "stateName": "New Mexico",
+      "currentGovernor": "Michelle Lujan Grisham",
+      "heldParty": "D",
+      "incumbentStatus": "term-limited",
+      "openSeat": true,
+      "termYears": 4,
+      "electionDate": "2026-11-03",
+      "rating": "Solid D",
+      "ratingDate": "2026-08-27",
+      "sourceRefs": [
+        "nga-governors",
+        "nga-roster",
+        "nga-elections",
+        "cook-2026-08-27"
+      ]
+    },
+    {
+      "id": "NY-GOV-2026",
+      "state": "NY",
+      "stateName": "New York",
+      "currentGovernor": "Kathy Hochul",
+      "heldParty": "D",
+      "incumbentStatus": "seeking-reelection",
+      "openSeat": false,
+      "termYears": 4,
+      "electionDate": "2026-11-03",
+      "rating": "Solid D",
+      "ratingDate": "2026-08-27",
+      "sourceRefs": [
+        "nga-governors",
+        "nga-roster",
+        "nga-elections",
+        "cook-2026-08-27"
+      ]
+    },
+    {
+      "id": "OH-GOV-2026",
+      "state": "OH",
+      "stateName": "Ohio",
+      "currentGovernor": "Mike DeWine",
+      "heldParty": "R",
+      "incumbentStatus": "term-limited",
+      "openSeat": true,
+      "termYears": 4,
+      "electionDate": "2026-11-03",
+      "rating": "Toss-up",
+      "ratingDate": "2026-08-27",
+      "sourceRefs": [
+        "nga-governors",
+        "nga-roster",
+        "nga-elections",
+        "cook-2026-08-27"
+      ]
+    },
+    {
+      "id": "OK-GOV-2026",
+      "state": "OK",
+      "stateName": "Oklahoma",
+      "currentGovernor": "Kevin Stitt",
+      "heldParty": "R",
+      "incumbentStatus": "term-limited",
+      "openSeat": true,
+      "termYears": 4,
+      "electionDate": "2026-11-03",
+      "rating": "Solid R",
+      "ratingDate": "2026-08-27",
+      "sourceRefs": [
+        "nga-governors",
+        "nga-roster",
+        "nga-elections",
+        "cook-2026-08-27"
+      ]
+    },
+    {
+      "id": "OR-GOV-2026",
+      "state": "OR",
+      "stateName": "Oregon",
+      "currentGovernor": "Tina Kotek",
+      "heldParty": "D",
+      "incumbentStatus": "seeking-reelection",
+      "openSeat": false,
+      "termYears": 4,
+      "electionDate": "2026-11-03",
+      "rating": "Likely D",
+      "ratingDate": "2026-08-27",
+      "sourceRefs": [
+        "nga-governors",
+        "nga-roster",
+        "nga-elections",
+        "cook-2026-08-27"
+      ]
+    },
+    {
+      "id": "PA-GOV-2026",
+      "state": "PA",
+      "stateName": "Pennsylvania",
+      "currentGovernor": "Josh Shapiro",
+      "heldParty": "D",
+      "incumbentStatus": "seeking-reelection",
+      "openSeat": false,
+      "termYears": 4,
+      "electionDate": "2026-11-03",
+      "rating": "Solid D",
+      "ratingDate": "2026-08-27",
+      "sourceRefs": [
+        "nga-governors",
+        "nga-roster",
+        "nga-elections",
+        "cook-2026-08-27"
+      ]
+    },
+    {
+      "id": "RI-GOV-2026",
+      "state": "RI",
+      "stateName": "Rhode Island",
+      "currentGovernor": "Dan McKee",
+      "heldParty": "D",
+      "incumbentStatus": "seeking-reelection",
+      "openSeat": false,
+      "termYears": 4,
+      "electionDate": "2026-11-03",
+      "rating": "Solid D",
+      "ratingDate": "2026-08-27",
+      "sourceRefs": [
+        "nga-governors",
+        "nga-roster",
+        "nga-elections",
+        "cook-2026-08-27"
+      ]
+    },
+    {
+      "id": "SC-GOV-2026",
+      "state": "SC",
+      "stateName": "South Carolina",
+      "currentGovernor": "Henry McMaster",
+      "heldParty": "R",
+      "incumbentStatus": "term-limited",
+      "openSeat": true,
+      "termYears": 4,
+      "electionDate": "2026-11-03",
+      "rating": "Solid R",
+      "ratingDate": "2026-08-27",
+      "sourceRefs": [
+        "nga-governors",
+        "nga-roster",
+        "nga-elections",
+        "cook-2026-08-27"
+      ]
+    },
+    {
+      "id": "SD-GOV-2026",
+      "state": "SD",
+      "stateName": "South Dakota",
+      "currentGovernor": "Larry Rhoden",
+      "heldParty": "R",
+      "incumbentStatus": "seeking-reelection",
+      "openSeat": false,
+      "termYears": 4,
+      "electionDate": "2026-11-03",
+      "rating": "Solid R",
+      "ratingDate": "2026-08-27",
+      "sourceRefs": [
+        "nga-governors",
+        "nga-roster",
+        "nga-elections",
+        "cook-2026-08-27"
+      ],
+      "officeholderNote": "Larry Rhoden succeeded Kristi Noem in January 2025; this is a regular gubernatorial election."
+    },
+    {
+      "id": "TN-GOV-2026",
+      "state": "TN",
+      "stateName": "Tennessee",
+      "currentGovernor": "Bill Lee",
+      "heldParty": "R",
+      "incumbentStatus": "term-limited",
+      "openSeat": true,
+      "termYears": 4,
+      "electionDate": "2026-11-03",
+      "rating": "Solid R",
+      "ratingDate": "2026-08-27",
+      "sourceRefs": [
+        "nga-governors",
+        "nga-roster",
+        "nga-elections",
+        "cook-2026-08-27"
+      ]
+    },
+    {
+      "id": "TX-GOV-2026",
+      "state": "TX",
+      "stateName": "Texas",
+      "currentGovernor": "Greg Abbott",
+      "heldParty": "R",
+      "incumbentStatus": "seeking-reelection",
+      "openSeat": false,
+      "termYears": 4,
+      "electionDate": "2026-11-03",
+      "rating": "Likely R",
+      "ratingDate": "2026-08-27",
+      "sourceRefs": [
+        "nga-governors",
+        "nga-roster",
+        "nga-elections",
+        "cook-2026-08-27"
+      ]
+    },
+    {
+      "id": "VT-GOV-2026",
+      "state": "VT",
+      "stateName": "Vermont",
+      "currentGovernor": "Phil Scott",
+      "heldParty": "R",
+      "incumbentStatus": "seeking-reelection",
+      "openSeat": false,
+      "termYears": 2,
+      "electionDate": "2026-11-03",
+      "rating": "Solid R",
+      "ratingDate": "2026-08-27",
+      "sourceRefs": [
+        "nga-governors",
+        "nga-roster",
+        "nga-elections",
+        "cook-2026-08-27"
+      ]
+    },
+    {
+      "id": "WI-GOV-2026",
+      "state": "WI",
+      "stateName": "Wisconsin",
+      "currentGovernor": "Tony Evers",
+      "heldParty": "D",
+      "incumbentStatus": "not-seeking-reelection",
+      "openSeat": true,
+      "termYears": 4,
+      "electionDate": "2026-11-03",
+      "rating": "Toss-up",
+      "ratingDate": "2026-08-27",
+      "sourceRefs": [
+        "nga-governors",
+        "nga-roster",
+        "nga-elections",
+        "cook-2026-08-27",
+        "wi-retirement"
+      ]
+    },
+    {
+      "id": "WY-GOV-2026",
+      "state": "WY",
+      "stateName": "Wyoming",
+      "currentGovernor": "Mark Gordon",
+      "heldParty": "R",
+      "incumbentStatus": "term-limited",
+      "openSeat": true,
+      "termYears": 4,
+      "electionDate": "2026-11-03",
+      "rating": "Solid R",
+      "ratingDate": "2026-08-27",
+      "sourceRefs": [
+        "nga-governors",
+        "nga-roster",
+        "nga-elections",
+        "cook-2026-08-27"
+      ]
+    }
+  ],
+  "territorialElectionsExcluded": [
+    {
+      "code": "GU",
+      "name": "Guam",
+      "currentGovernor": "Lou Leon Guerrero",
+      "heldParty": "D",
+      "electionDate": "2026-11-03",
+      "termYears": 4,
+      "incumbentStatus": "term-limited",
+      "sourceRefs": [
+        "nga-governors",
+        "nga-roster",
+        "nga-elections"
+      ]
+    },
+    {
+      "code": "MP",
+      "name": "Northern Mariana Islands",
+      "currentGovernor": "David M. Apatang",
+      "heldParty": "R",
+      "electionDate": "2026-11-03",
+      "termYears": 4,
+      "incumbentStatus": null,
+      "sourceRefs": [
+        "nga-governors",
+        "nga-cnmi",
+        "nga-elections"
+      ],
+      "note": "Governor biography identifies Republican; shared PDF still shows Independent. Candidate status was not independently verified."
+    },
+    {
+      "code": "VI",
+      "name": "U.S. Virgin Islands",
+      "currentGovernor": "Albert Bryan",
+      "heldParty": "D",
+      "electionDate": "2026-11-03",
+      "termYears": 4,
+      "incumbentStatus": "term-limited",
+      "sourceRefs": [
+        "nga-governors",
+        "nga-roster",
+        "nga-elections"
+      ]
+    }
+  ],
+  "statesWithout2026Election": {
+    "D": "DE KY NC NJ VA WA",
+    "R": "IN LA MS MO MT ND UT WV"
+  },
+  "sources": {
+    "nga-governors": {
+      "title": "National Governors Association: current governors",
+      "url": "https://www.nga.org/governors/",
+      "datePublished": null,
+      "use": "Current officeholder names; current-page cross-check."
+    },
+    "nga-roster": {
+      "title": "NGA governors roster: affiliations and terms",
+      "url": "https://www.nga.org/wp-content/uploads/2024/12/Governors-Roster.pdf",
+      "datePublished": null,
+      "use": "State officeholder party affiliations. Names match the current NGA governors page. Historical URL and PDF metadata do not describe its current revision date; term-date cells contain stale entries and were not imported."
+    },
+    "nga-elections": {
+      "title": "NGA gubernatorial elections",
+      "url": "https://www.nga.org/governors/elections/",
+      "datePublished": null,
+      "use": "2026 election universe, November 3 general-election date, officeholders, explicit term-limited markers and reelection coverage."
+    },
+    "nga-powers": {
+      "title": "NGA governors powers and authority",
+      "url": "https://www.nga.org/governors/powers-and-authority/",
+      "datePublished": null,
+      "use": "Executive duties, legislative relationship and term lengths."
+    },
+    "cook-2026-08-27": {
+      "title": "Cook Political Report 2026 governor race ratings",
+      "url": "https://www.cookpolitical.com/ratings/governor-race-ratings",
+      "datePublished": "2026-08-27",
+      "use": "Dated editorial ratings and open-seat designation. Complete indexed primary table retrieved; direct URL fetch failed."
+    },
+    "ia-retirement": {
+      "title": "AP: Kim Reynolds will not seek reelection",
+      "url": "https://apnews.com/article/84052fdcc9fdca605b15dc256e0b30ff",
+      "datePublished": "2025-04-11",
+      "use": "Direct reporting of Reynolds non-candidacy announcement."
+    },
+    "mn-retirement": {
+      "title": "Governor Walz statement announcing he will not seek reelection",
+      "url": "https://mn.gov/governor/newsroom/press-releases/?id=718148",
+      "datePublished": "2026-01-05",
+      "use": "Primary statement confirming non-candidacy."
+    },
+    "wi-retirement": {
+      "title": "Milwaukee County executive statement on Governor Evers not seeking a third term",
+      "url": "https://county.milwaukee.gov/EN/County-Executive/News/Milwaukee-County-Executive-David-Crowley-Statement-on-Governor-Tony-Evers-Not-Seeking-Third-Term",
+      "datePublished": "2025-07-24",
+      "use": "Official contemporaneous confirmation of Evers non-candidacy."
+    },
+    "nga-cnmi": {
+      "title": "NGA Governor David M. Apatang biography",
+      "url": "https://www.nga.org/governors/northern-mariana-islands/",
+      "datePublished": null,
+      "use": "Current CNMI governor and Republican party affiliation. This individual biography is more current than the shared roster party code."
+    }
+  },
+  "cautions": [
+    "Current governor identifies the officeholder, not necessarily a November candidate. Open-seat rows retain the outgoing governor as the current officeholder.",
+    "Governorship totals are counts of separate state executive offices. They do not constitute control of a national legislative chamber or determine congressional control.",
+    "Ratings are Cook editorial categories dated August 27, 2026, not model probabilities, polling averages, observed outcomes or ratings verified as updated September 4.",
+    "Cook overview landing reports September 2 at aggregate level while its complete governor table is dated August 27. Use the detailed table date for these 36 labels.",
+    "NGA election pages include older-year sections and some stale candidate placeholders. No candidate list was imported.",
+    "NGA PDF contains inconsistent term-date cells and an outdated CNMI Independent code; current officeholder names were checked against the current page, and CNMI party uses the individual biography.",
+    "American Samoa and Puerto Rico do not appear in NGA 2026 election list; their 2024 elections and four-year terms are outside this companion.",
+    "The District of Columbia has a mayor, not a state governor, and is excluded."
+  ]
+}

@@ -1,0 +1,737 @@
+{
+  "title": "2026 United States Senate race roster",
+  "retrievedAt": "2026-09-04",
+  "chamber": {
+    "totalSeats": 100,
+    "contestedSeats": 35,
+    "regularSeats": 33,
+    "specialSeats": 2,
+    "contestedByHeldParty": {
+      "D": 13,
+      "R": 22
+    },
+    "notContestedByCaucus": {
+      "DemocraticCaucus": 34,
+      "Republican": 31
+    },
+    "currentComposition": {
+      "Democrats": 45,
+      "IndependentsCaucusingWithDemocrats": 2,
+      "Republicans": 53
+    },
+    "currentCompositionAsOf": "2026-07-14",
+    "majorityCaution": "A 50-50 Senate has a Republican vice president as tie-breaker. Democratic caucus needs 51 seats for control under this assumption; Republican caucus needs 50."
+  },
+  "races": [
+    {
+      "id": "AL-S2-2026",
+      "state": "AL",
+      "stateName": "Alabama",
+      "seatClass": 2,
+      "electionType": "regular",
+      "electionDate": "2026-11-03",
+      "termEnd": "2033-01-03",
+      "heldParty": "R",
+      "currentSenator": "Tommy Tuberville",
+      "incumbentStatus": "retiring",
+      "openSeat": true,
+      "candidacyVerified": true,
+      "sources": [
+        "https://www.senate.gov/senators/Class_II.htm",
+        "https://www.dailypress.senate.gov/on-the-floor/senate-facts/"
+      ],
+      "retrievedAt": "2026-09-04",
+      "statusCaution": "Incumbent identifies current officeholder; it does not by itself verify nomination or general-election candidacy."
+    },
+    {
+      "id": "AK-S2-2026",
+      "state": "AK",
+      "stateName": "Alaska",
+      "seatClass": 2,
+      "electionType": "regular",
+      "electionDate": "2026-11-03",
+      "termEnd": "2033-01-03",
+      "heldParty": "R",
+      "currentSenator": "Dan Sullivan",
+      "incumbentStatus": "incumbent",
+      "openSeat": false,
+      "candidacyVerified": false,
+      "sources": [
+        "https://www.senate.gov/senators/Class_II.htm",
+        "https://www.dailypress.senate.gov/on-the-floor/senate-facts/"
+      ],
+      "retrievedAt": "2026-09-04",
+      "statusCaution": "Incumbent identifies current officeholder; it does not by itself verify nomination or general-election candidacy."
+    },
+    {
+      "id": "AR-S2-2026",
+      "state": "AR",
+      "stateName": "Arkansas",
+      "seatClass": 2,
+      "electionType": "regular",
+      "electionDate": "2026-11-03",
+      "termEnd": "2033-01-03",
+      "heldParty": "R",
+      "currentSenator": "Tom Cotton",
+      "incumbentStatus": "incumbent",
+      "openSeat": false,
+      "candidacyVerified": false,
+      "sources": [
+        "https://www.senate.gov/senators/Class_II.htm",
+        "https://www.dailypress.senate.gov/on-the-floor/senate-facts/"
+      ],
+      "retrievedAt": "2026-09-04",
+      "statusCaution": "Incumbent identifies current officeholder; it does not by itself verify nomination or general-election candidacy."
+    },
+    {
+      "id": "CO-S2-2026",
+      "state": "CO",
+      "stateName": "Colorado",
+      "seatClass": 2,
+      "electionType": "regular",
+      "electionDate": "2026-11-03",
+      "termEnd": "2033-01-03",
+      "heldParty": "D",
+      "currentSenator": "John Hickenlooper",
+      "incumbentStatus": "incumbent",
+      "openSeat": false,
+      "candidacyVerified": false,
+      "sources": [
+        "https://www.senate.gov/senators/Class_II.htm",
+        "https://www.dailypress.senate.gov/on-the-floor/senate-facts/"
+      ],
+      "retrievedAt": "2026-09-04",
+      "statusCaution": "Incumbent identifies current officeholder; it does not by itself verify nomination or general-election candidacy."
+    },
+    {
+      "id": "DE-S2-2026",
+      "state": "DE",
+      "stateName": "Delaware",
+      "seatClass": 2,
+      "electionType": "regular",
+      "electionDate": "2026-11-03",
+      "termEnd": "2033-01-03",
+      "heldParty": "D",
+      "currentSenator": "Chris Coons",
+      "incumbentStatus": "incumbent",
+      "openSeat": false,
+      "candidacyVerified": false,
+      "sources": [
+        "https://www.senate.gov/senators/Class_II.htm",
+        "https://www.dailypress.senate.gov/on-the-floor/senate-facts/"
+      ],
+      "retrievedAt": "2026-09-04",
+      "statusCaution": "Incumbent identifies current officeholder; it does not by itself verify nomination or general-election candidacy."
+    },
+    {
+      "id": "FL-S3-2026",
+      "state": "FL",
+      "stateName": "Florida",
+      "seatClass": 3,
+      "electionType": "special",
+      "electionDate": "2026-11-03",
+      "termEnd": "2029-01-03",
+      "heldParty": "R",
+      "currentSenator": "Ashley Moody",
+      "incumbentStatus": "appointed",
+      "openSeat": false,
+      "candidacyVerified": false,
+      "sources": [
+        "https://www.dailypress.senate.gov/on-the-floor/senate-facts/",
+        "https://www.thegreenpapers.com/G26/Senate.phtml"
+      ],
+      "retrievedAt": "2026-09-04",
+      "statusCaution": "Incumbent identifies current officeholder; it does not by itself verify nomination or general-election candidacy."
+    },
+    {
+      "id": "GA-S2-2026",
+      "state": "GA",
+      "stateName": "Georgia",
+      "seatClass": 2,
+      "electionType": "regular",
+      "electionDate": "2026-11-03",
+      "termEnd": "2033-01-03",
+      "heldParty": "D",
+      "currentSenator": "Jon Ossoff",
+      "incumbentStatus": "incumbent",
+      "openSeat": false,
+      "candidacyVerified": false,
+      "sources": [
+        "https://www.senate.gov/senators/Class_II.htm",
+        "https://www.dailypress.senate.gov/on-the-floor/senate-facts/"
+      ],
+      "retrievedAt": "2026-09-04",
+      "statusCaution": "Incumbent identifies current officeholder; it does not by itself verify nomination or general-election candidacy."
+    },
+    {
+      "id": "ID-S2-2026",
+      "state": "ID",
+      "stateName": "Idaho",
+      "seatClass": 2,
+      "electionType": "regular",
+      "electionDate": "2026-11-03",
+      "termEnd": "2033-01-03",
+      "heldParty": "R",
+      "currentSenator": "Jim Risch",
+      "incumbentStatus": "incumbent",
+      "openSeat": false,
+      "candidacyVerified": false,
+      "sources": [
+        "https://www.senate.gov/senators/Class_II.htm",
+        "https://www.dailypress.senate.gov/on-the-floor/senate-facts/"
+      ],
+      "retrievedAt": "2026-09-04",
+      "statusCaution": "Incumbent identifies current officeholder; it does not by itself verify nomination or general-election candidacy."
+    },
+    {
+      "id": "IL-S2-2026",
+      "state": "IL",
+      "stateName": "Illinois",
+      "seatClass": 2,
+      "electionType": "regular",
+      "electionDate": "2026-11-03",
+      "termEnd": "2033-01-03",
+      "heldParty": "D",
+      "currentSenator": "Dick Durbin",
+      "incumbentStatus": "retiring",
+      "openSeat": true,
+      "candidacyVerified": true,
+      "sources": [
+        "https://www.senate.gov/senators/Class_II.htm",
+        "https://www.dailypress.senate.gov/on-the-floor/senate-facts/"
+      ],
+      "retrievedAt": "2026-09-04",
+      "statusCaution": "Incumbent identifies current officeholder; it does not by itself verify nomination or general-election candidacy."
+    },
+    {
+      "id": "IA-S2-2026",
+      "state": "IA",
+      "stateName": "Iowa",
+      "seatClass": 2,
+      "electionType": "regular",
+      "electionDate": "2026-11-03",
+      "termEnd": "2033-01-03",
+      "heldParty": "R",
+      "currentSenator": "Joni Ernst",
+      "incumbentStatus": "retiring",
+      "openSeat": true,
+      "candidacyVerified": true,
+      "sources": [
+        "https://www.senate.gov/senators/Class_II.htm",
+        "https://www.dailypress.senate.gov/on-the-floor/senate-facts/"
+      ],
+      "retrievedAt": "2026-09-04",
+      "statusCaution": "Incumbent identifies current officeholder; it does not by itself verify nomination or general-election candidacy."
+    },
+    {
+      "id": "KS-S2-2026",
+      "state": "KS",
+      "stateName": "Kansas",
+      "seatClass": 2,
+      "electionType": "regular",
+      "electionDate": "2026-11-03",
+      "termEnd": "2033-01-03",
+      "heldParty": "R",
+      "currentSenator": "Roger Marshall",
+      "incumbentStatus": "incumbent",
+      "openSeat": false,
+      "candidacyVerified": false,
+      "sources": [
+        "https://www.senate.gov/senators/Class_II.htm",
+        "https://www.dailypress.senate.gov/on-the-floor/senate-facts/"
+      ],
+      "retrievedAt": "2026-09-04",
+      "statusCaution": "Incumbent identifies current officeholder; it does not by itself verify nomination or general-election candidacy."
+    },
+    {
+      "id": "KY-S2-2026",
+      "state": "KY",
+      "stateName": "Kentucky",
+      "seatClass": 2,
+      "electionType": "regular",
+      "electionDate": "2026-11-03",
+      "termEnd": "2033-01-03",
+      "heldParty": "R",
+      "currentSenator": "Mitch McConnell",
+      "incumbentStatus": "retiring",
+      "openSeat": true,
+      "candidacyVerified": true,
+      "sources": [
+        "https://www.senate.gov/senators/Class_II.htm",
+        "https://www.dailypress.senate.gov/on-the-floor/senate-facts/"
+      ],
+      "retrievedAt": "2026-09-04",
+      "statusCaution": "Incumbent identifies current officeholder; it does not by itself verify nomination or general-election candidacy."
+    },
+    {
+      "id": "LA-S2-2026",
+      "state": "LA",
+      "stateName": "Louisiana",
+      "seatClass": 2,
+      "electionType": "regular",
+      "electionDate": "2026-11-03",
+      "termEnd": "2033-01-03",
+      "heldParty": "R",
+      "currentSenator": "Bill Cassidy",
+      "incumbentStatus": "lost-primary",
+      "openSeat": true,
+      "candidacyVerified": true,
+      "sources": [
+        "https://www.senate.gov/senators/Class_II.htm",
+        "https://www.dailypress.senate.gov/on-the-floor/senate-facts/"
+      ],
+      "retrievedAt": "2026-09-04",
+      "statusCaution": "Incumbent identifies current officeholder; it does not by itself verify nomination or general-election candidacy."
+    },
+    {
+      "id": "ME-S2-2026",
+      "state": "ME",
+      "stateName": "Maine",
+      "seatClass": 2,
+      "electionType": "regular",
+      "electionDate": "2026-11-03",
+      "termEnd": "2033-01-03",
+      "heldParty": "R",
+      "currentSenator": "Susan Collins",
+      "incumbentStatus": "incumbent",
+      "openSeat": false,
+      "candidacyVerified": false,
+      "sources": [
+        "https://www.senate.gov/senators/Class_II.htm",
+        "https://www.dailypress.senate.gov/on-the-floor/senate-facts/"
+      ],
+      "retrievedAt": "2026-09-04",
+      "statusCaution": "Incumbent identifies current officeholder; it does not by itself verify nomination or general-election candidacy."
+    },
+    {
+      "id": "MA-S2-2026",
+      "state": "MA",
+      "stateName": "Massachusetts",
+      "seatClass": 2,
+      "electionType": "regular",
+      "electionDate": "2026-11-03",
+      "termEnd": "2033-01-03",
+      "heldParty": "D",
+      "currentSenator": "Ed Markey",
+      "incumbentStatus": "incumbent",
+      "openSeat": false,
+      "candidacyVerified": false,
+      "sources": [
+        "https://www.senate.gov/senators/Class_II.htm",
+        "https://www.dailypress.senate.gov/on-the-floor/senate-facts/"
+      ],
+      "retrievedAt": "2026-09-04",
+      "statusCaution": "Incumbent identifies current officeholder; it does not by itself verify nomination or general-election candidacy."
+    },
+    {
+      "id": "MI-S2-2026",
+      "state": "MI",
+      "stateName": "Michigan",
+      "seatClass": 2,
+      "electionType": "regular",
+      "electionDate": "2026-11-03",
+      "termEnd": "2033-01-03",
+      "heldParty": "D",
+      "currentSenator": "Gary Peters",
+      "incumbentStatus": "retiring",
+      "openSeat": true,
+      "candidacyVerified": true,
+      "sources": [
+        "https://www.senate.gov/senators/Class_II.htm",
+        "https://www.dailypress.senate.gov/on-the-floor/senate-facts/"
+      ],
+      "retrievedAt": "2026-09-04",
+      "statusCaution": "Incumbent identifies current officeholder; it does not by itself verify nomination or general-election candidacy."
+    },
+    {
+      "id": "MN-S2-2026",
+      "state": "MN",
+      "stateName": "Minnesota",
+      "seatClass": 2,
+      "electionType": "regular",
+      "electionDate": "2026-11-03",
+      "termEnd": "2033-01-03",
+      "heldParty": "D",
+      "currentSenator": "Tina Smith",
+      "incumbentStatus": "retiring",
+      "openSeat": true,
+      "candidacyVerified": true,
+      "sources": [
+        "https://www.senate.gov/senators/Class_II.htm",
+        "https://www.dailypress.senate.gov/on-the-floor/senate-facts/"
+      ],
+      "retrievedAt": "2026-09-04",
+      "statusCaution": "Incumbent identifies current officeholder; it does not by itself verify nomination or general-election candidacy."
+    },
+    {
+      "id": "MS-S2-2026",
+      "state": "MS",
+      "stateName": "Mississippi",
+      "seatClass": 2,
+      "electionType": "regular",
+      "electionDate": "2026-11-03",
+      "termEnd": "2033-01-03",
+      "heldParty": "R",
+      "currentSenator": "Cindy Hyde-Smith",
+      "incumbentStatus": "incumbent",
+      "openSeat": false,
+      "candidacyVerified": false,
+      "sources": [
+        "https://www.senate.gov/senators/Class_II.htm",
+        "https://www.dailypress.senate.gov/on-the-floor/senate-facts/"
+      ],
+      "retrievedAt": "2026-09-04",
+      "statusCaution": "Incumbent identifies current officeholder; it does not by itself verify nomination or general-election candidacy."
+    },
+    {
+      "id": "MT-S2-2026",
+      "state": "MT",
+      "stateName": "Montana",
+      "seatClass": 2,
+      "electionType": "regular",
+      "electionDate": "2026-11-03",
+      "termEnd": "2033-01-03",
+      "heldParty": "R",
+      "currentSenator": "Steve Daines",
+      "incumbentStatus": "retiring",
+      "openSeat": true,
+      "candidacyVerified": true,
+      "sources": [
+        "https://www.senate.gov/senators/Class_II.htm",
+        "https://www.dailypress.senate.gov/on-the-floor/senate-facts/"
+      ],
+      "retrievedAt": "2026-09-04",
+      "statusCaution": "Incumbent identifies current officeholder; it does not by itself verify nomination or general-election candidacy."
+    },
+    {
+      "id": "NE-S2-2026",
+      "state": "NE",
+      "stateName": "Nebraska",
+      "seatClass": 2,
+      "electionType": "regular",
+      "electionDate": "2026-11-03",
+      "termEnd": "2033-01-03",
+      "heldParty": "R",
+      "currentSenator": "Pete Ricketts",
+      "incumbentStatus": "incumbent",
+      "openSeat": false,
+      "candidacyVerified": false,
+      "sources": [
+        "https://www.senate.gov/senators/Class_II.htm",
+        "https://www.dailypress.senate.gov/on-the-floor/senate-facts/"
+      ],
+      "retrievedAt": "2026-09-04",
+      "statusCaution": "Incumbent identifies current officeholder; it does not by itself verify nomination or general-election candidacy."
+    },
+    {
+      "id": "NH-S2-2026",
+      "state": "NH",
+      "stateName": "New Hampshire",
+      "seatClass": 2,
+      "electionType": "regular",
+      "electionDate": "2026-11-03",
+      "termEnd": "2033-01-03",
+      "heldParty": "D",
+      "currentSenator": "Jeanne Shaheen",
+      "incumbentStatus": "retiring",
+      "openSeat": true,
+      "candidacyVerified": true,
+      "sources": [
+        "https://www.senate.gov/senators/Class_II.htm",
+        "https://www.dailypress.senate.gov/on-the-floor/senate-facts/"
+      ],
+      "retrievedAt": "2026-09-04",
+      "statusCaution": "Incumbent identifies current officeholder; it does not by itself verify nomination or general-election candidacy."
+    },
+    {
+      "id": "NJ-S2-2026",
+      "state": "NJ",
+      "stateName": "New Jersey",
+      "seatClass": 2,
+      "electionType": "regular",
+      "electionDate": "2026-11-03",
+      "termEnd": "2033-01-03",
+      "heldParty": "D",
+      "currentSenator": "Cory Booker",
+      "incumbentStatus": "incumbent",
+      "openSeat": false,
+      "candidacyVerified": false,
+      "sources": [
+        "https://www.senate.gov/senators/Class_II.htm",
+        "https://www.dailypress.senate.gov/on-the-floor/senate-facts/"
+      ],
+      "retrievedAt": "2026-09-04",
+      "statusCaution": "Incumbent identifies current officeholder; it does not by itself verify nomination or general-election candidacy."
+    },
+    {
+      "id": "NM-S2-2026",
+      "state": "NM",
+      "stateName": "New Mexico",
+      "seatClass": 2,
+      "electionType": "regular",
+      "electionDate": "2026-11-03",
+      "termEnd": "2033-01-03",
+      "heldParty": "D",
+      "currentSenator": "Ben Ray Luján",
+      "incumbentStatus": "incumbent",
+      "openSeat": false,
+      "candidacyVerified": false,
+      "sources": [
+        "https://www.senate.gov/senators/Class_II.htm",
+        "https://www.dailypress.senate.gov/on-the-floor/senate-facts/"
+      ],
+      "retrievedAt": "2026-09-04",
+      "statusCaution": "Incumbent identifies current officeholder; it does not by itself verify nomination or general-election candidacy."
+    },
+    {
+      "id": "NC-S2-2026",
+      "state": "NC",
+      "stateName": "North Carolina",
+      "seatClass": 2,
+      "electionType": "regular",
+      "electionDate": "2026-11-03",
+      "termEnd": "2033-01-03",
+      "heldParty": "R",
+      "currentSenator": "Thom Tillis",
+      "incumbentStatus": "retiring",
+      "openSeat": true,
+      "candidacyVerified": true,
+      "sources": [
+        "https://www.senate.gov/senators/Class_II.htm",
+        "https://www.dailypress.senate.gov/on-the-floor/senate-facts/"
+      ],
+      "retrievedAt": "2026-09-04",
+      "statusCaution": "Incumbent identifies current officeholder; it does not by itself verify nomination or general-election candidacy."
+    },
+    {
+      "id": "OH-S3-2026",
+      "state": "OH",
+      "stateName": "Ohio",
+      "seatClass": 3,
+      "electionType": "special",
+      "electionDate": "2026-11-03",
+      "termEnd": "2029-01-03",
+      "heldParty": "R",
+      "currentSenator": "Jon Husted",
+      "incumbentStatus": "appointed",
+      "openSeat": false,
+      "candidacyVerified": false,
+      "sources": [
+        "https://www.dailypress.senate.gov/on-the-floor/senate-facts/",
+        "https://www.thegreenpapers.com/G26/Senate.phtml"
+      ],
+      "retrievedAt": "2026-09-04",
+      "statusCaution": "Incumbent identifies current officeholder; it does not by itself verify nomination or general-election candidacy."
+    },
+    {
+      "id": "OK-S2-2026",
+      "state": "OK",
+      "stateName": "Oklahoma",
+      "seatClass": 2,
+      "electionType": "regular",
+      "electionDate": "2026-11-03",
+      "termEnd": "2033-01-03",
+      "heldParty": "R",
+      "currentSenator": "Alan Armstrong",
+      "incumbentStatus": "appointed-not-running",
+      "openSeat": true,
+      "candidacyVerified": true,
+      "sources": [
+        "https://www.senate.gov/senators/Class_II.htm",
+        "https://www.dailypress.senate.gov/on-the-floor/senate-facts/",
+        "https://www.thegreenpapers.com/G26/Senate.phtml"
+      ],
+      "retrievedAt": "2026-09-04",
+      "statusCaution": "Incumbent identifies current officeholder; it does not by itself verify nomination or general-election candidacy."
+    },
+    {
+      "id": "OR-S2-2026",
+      "state": "OR",
+      "stateName": "Oregon",
+      "seatClass": 2,
+      "electionType": "regular",
+      "electionDate": "2026-11-03",
+      "termEnd": "2033-01-03",
+      "heldParty": "D",
+      "currentSenator": "Jeff Merkley",
+      "incumbentStatus": "incumbent",
+      "openSeat": false,
+      "candidacyVerified": false,
+      "sources": [
+        "https://www.senate.gov/senators/Class_II.htm",
+        "https://www.dailypress.senate.gov/on-the-floor/senate-facts/"
+      ],
+      "retrievedAt": "2026-09-04",
+      "statusCaution": "Incumbent identifies current officeholder; it does not by itself verify nomination or general-election candidacy."
+    },
+    {
+      "id": "RI-S2-2026",
+      "state": "RI",
+      "stateName": "Rhode Island",
+      "seatClass": 2,
+      "electionType": "regular",
+      "electionDate": "2026-11-03",
+      "termEnd": "2033-01-03",
+      "heldParty": "D",
+      "currentSenator": "Jack Reed",
+      "incumbentStatus": "incumbent",
+      "openSeat": false,
+      "candidacyVerified": false,
+      "sources": [
+        "https://www.senate.gov/senators/Class_II.htm",
+        "https://www.dailypress.senate.gov/on-the-floor/senate-facts/"
+      ],
+      "retrievedAt": "2026-09-04",
+      "statusCaution": "Incumbent identifies current officeholder; it does not by itself verify nomination or general-election candidacy."
+    },
+    {
+      "id": "SC-S2-2026",
+      "state": "SC",
+      "stateName": "South Carolina",
+      "seatClass": 2,
+      "electionType": "regular",
+      "electionDate": "2026-11-03",
+      "termEnd": "2033-01-03",
+      "heldParty": "R",
+      "currentSenator": "Darline Graham",
+      "incumbentStatus": "appointed",
+      "openSeat": false,
+      "candidacyVerified": false,
+      "sources": [
+        "https://www.senate.gov/senators/Class_II.htm",
+        "https://www.dailypress.senate.gov/on-the-floor/senate-facts/"
+      ],
+      "retrievedAt": "2026-09-04",
+      "statusCaution": "Incumbent identifies current officeholder; it does not by itself verify nomination or general-election candidacy."
+    },
+    {
+      "id": "SD-S2-2026",
+      "state": "SD",
+      "stateName": "South Dakota",
+      "seatClass": 2,
+      "electionType": "regular",
+      "electionDate": "2026-11-03",
+      "termEnd": "2033-01-03",
+      "heldParty": "R",
+      "currentSenator": "Mike Rounds",
+      "incumbentStatus": "incumbent",
+      "openSeat": false,
+      "candidacyVerified": false,
+      "sources": [
+        "https://www.senate.gov/senators/Class_II.htm",
+        "https://www.dailypress.senate.gov/on-the-floor/senate-facts/"
+      ],
+      "retrievedAt": "2026-09-04",
+      "statusCaution": "Incumbent identifies current officeholder; it does not by itself verify nomination or general-election candidacy."
+    },
+    {
+      "id": "TN-S2-2026",
+      "state": "TN",
+      "stateName": "Tennessee",
+      "seatClass": 2,
+      "electionType": "regular",
+      "electionDate": "2026-11-03",
+      "termEnd": "2033-01-03",
+      "heldParty": "R",
+      "currentSenator": "Bill Hagerty",
+      "incumbentStatus": "incumbent",
+      "openSeat": false,
+      "candidacyVerified": false,
+      "sources": [
+        "https://www.senate.gov/senators/Class_II.htm",
+        "https://www.dailypress.senate.gov/on-the-floor/senate-facts/"
+      ],
+      "retrievedAt": "2026-09-04",
+      "statusCaution": "Incumbent identifies current officeholder; it does not by itself verify nomination or general-election candidacy."
+    },
+    {
+      "id": "TX-S2-2026",
+      "state": "TX",
+      "stateName": "Texas",
+      "seatClass": 2,
+      "electionType": "regular",
+      "electionDate": "2026-11-03",
+      "termEnd": "2033-01-03",
+      "heldParty": "R",
+      "currentSenator": "John Cornyn",
+      "incumbentStatus": "lost-primary",
+      "openSeat": true,
+      "candidacyVerified": true,
+      "sources": [
+        "https://www.senate.gov/senators/Class_II.htm",
+        "https://www.dailypress.senate.gov/on-the-floor/senate-facts/"
+      ],
+      "retrievedAt": "2026-09-04",
+      "statusCaution": "Incumbent identifies current officeholder; it does not by itself verify nomination or general-election candidacy."
+    },
+    {
+      "id": "VA-S2-2026",
+      "state": "VA",
+      "stateName": "Virginia",
+      "seatClass": 2,
+      "electionType": "regular",
+      "electionDate": "2026-11-03",
+      "termEnd": "2033-01-03",
+      "heldParty": "D",
+      "currentSenator": "Mark Warner",
+      "incumbentStatus": "incumbent",
+      "openSeat": false,
+      "candidacyVerified": false,
+      "sources": [
+        "https://www.senate.gov/senators/Class_II.htm",
+        "https://www.dailypress.senate.gov/on-the-floor/senate-facts/"
+      ],
+      "retrievedAt": "2026-09-04",
+      "statusCaution": "Incumbent identifies current officeholder; it does not by itself verify nomination or general-election candidacy."
+    },
+    {
+      "id": "WV-S2-2026",
+      "state": "WV",
+      "stateName": "West Virginia",
+      "seatClass": 2,
+      "electionType": "regular",
+      "electionDate": "2026-11-03",
+      "termEnd": "2033-01-03",
+      "heldParty": "R",
+      "currentSenator": "Shelley Moore Capito",
+      "incumbentStatus": "incumbent",
+      "openSeat": false,
+      "candidacyVerified": false,
+      "sources": [
+        "https://www.senate.gov/senators/Class_II.htm",
+        "https://www.dailypress.senate.gov/on-the-floor/senate-facts/"
+      ],
+      "retrievedAt": "2026-09-04",
+      "statusCaution": "Incumbent identifies current officeholder; it does not by itself verify nomination or general-election candidacy."
+    },
+    {
+      "id": "WY-S2-2026",
+      "state": "WY",
+      "stateName": "Wyoming",
+      "seatClass": 2,
+      "electionType": "regular",
+      "electionDate": "2026-11-03",
+      "termEnd": "2033-01-03",
+      "heldParty": "R",
+      "currentSenator": "Cynthia Lummis",
+      "incumbentStatus": "retiring",
+      "openSeat": true,
+      "candidacyVerified": true,
+      "sources": [
+        "https://www.senate.gov/senators/Class_II.htm",
+        "https://www.dailypress.senate.gov/on-the-floor/senate-facts/"
+      ],
+      "retrievedAt": "2026-09-04",
+      "statusCaution": "Incumbent identifies current officeholder; it does not by itself verify nomination or general-election candidacy."
+    }
+  ],
+  "dataCautions": [
+    "Roster sources are current officeholder lists; race candidates need separate state election authority verification.",
+    "The Senate Daily Press page includes an older duplicated section. Use its top current section and July 14, 2026 party-lineup date.",
+    "The top Daily Press election section includes Florida and Ohio special elections despite its Class II heading; both are Class III special elections.",
+    "Open seat means no current officeholder contesting the election; it does not mean a presently vacant Senate office.",
+    "Current officeholders changed in Oklahoma and South Carolina during 2026. Do not substitute Markwayne Mullin or Lindsey Graham from older datasets.",
+    "Majority math treats the two independent holdover senators as Democratic caucus members. A newly elected independent needs an explicit caucus assumption.",
+    "No polls, probabilities, forecasts, winners, or November results are asserted in this roster."
+  ]
+}
